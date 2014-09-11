@@ -42,19 +42,19 @@ static float existingAngle;
     
     container.userInteractionEnabled = NO;
     [self addSubview:container];
-     startTransform = container.transform;
+    // startTransform = container.transform;
      [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAzimuth)] :currentAzimuth];
 }
 
+/*
 - (void)turnWheel:(double)angle {
     container.transform = CGAffineTransformRotate(startTransform, angle);
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)angle)] :angle];
 }
-
+*/
 
 - (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
     
-    /*
     CGPoint touchPoint = [touch locationInView:self];
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     float dx = touchPoint.x - center.x;
@@ -70,7 +70,6 @@ static float existingAngle;
     
     startTransform = container.transform;
     existingAngle = atan2(dy,dx);
-    */
     
     return YES;
     
@@ -79,7 +78,7 @@ static float existingAngle;
 
 - (BOOL)continueTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event
 {
-    /*
+    
     CGPoint touchPoint = [touch locationInView:self];
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     float dx = touchPoint.x - center.x;
@@ -101,7 +100,7 @@ static float existingAngle;
     }
     
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAzimuth)] :currentAzimuth];
-    */
+    
     return YES;
     
 }
@@ -109,7 +108,7 @@ static float existingAngle;
 
 - (void)endTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event
 {
-    /*
+    
     CGPoint touchPoint = [touch locationInView:self];
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     float dx = touchPoint.x - center.x;
@@ -132,7 +131,7 @@ static float existingAngle;
     existingAzimuth = currentAzimuth;
     
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAzimuth)] :currentAzimuth];
-    */
+    
 }
 
 

@@ -30,7 +30,7 @@
     
     motionManager = [[CMMotionManager alloc] init];
     [motionManager startDeviceMotionUpdates];
-    timer = [NSTimer scheduledTimerWithTimeInterval:1/25.0 target:self selector:@selector(doGyroUpdate) userInfo:nil repeats:YES];
+    // timer = [NSTimer scheduledTimerWithTimeInterval:1/25.0 target:self selector:@selector(doGyroUpdate) userInfo:nil repeats:YES];
     
     self.azimuthMain = 0;
     Sonic::createWorld();
@@ -57,10 +57,12 @@
     Sonic::setPlayerBearing(180/PI*(-az));
 }
 
+/*
 -(void) doGyroUpdate {
     double currentYaw = motionManager.deviceMotion.attitude.yaw;
     [steeringWheel turnWheel:currentYaw];
 }
+*/
 
 
 @end
