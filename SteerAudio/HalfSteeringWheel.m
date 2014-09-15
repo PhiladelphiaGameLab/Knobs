@@ -1,55 +1,34 @@
 //
-//  SteeringWheel.m
+//  HalfSteeringWheel.m
 //  SteerAudio
 //
-//  Created by Philadelphia Game Lab on 7/30/14.
+//  Created by Alex Cannon on 9/15/14.
 //  Copyright (c) 2014 Philadelphia Game Lab. All rights reserved.
 //
 
-#import "SteeringWheel.h"
-#import <QuartzCore/QuartzCore.h>
+#import "HalfSteeringWheel.h"
 
-
-@interface SteeringWheel()
-- (void)drawWheel;
-@end
-
-static float existingAngle;
-
-@implementation SteeringWheel
+@implementation HalfSteeringWheel
 
 @synthesize  delegate, container, startTransform, currentAngle, existingAngle;
 
-- (id) initWithFrame:(CGRect)frame andDelegate:(id)del {
-    
-    if ((self = [super initWithFrame:frame])) {
-        self.delegate = del;
-        self.existingAngle = 0;
-        self.currentAngle = 0;
-        [self drawWheel];
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
     }
     return self;
 }
 
-- (void) drawWheel {
-    
-    container = [[UIView alloc] initWithFrame:self.frame];
-    
-    UIImageView *bg = [[UIImageView alloc] initWithFrame:self.frame];
-    bg.image = [UIImage imageNamed:@"blueTracker0.png"];
-    [container addSubview:bg];
-    
-    container.userInteractionEnabled = NO;
-    [self addSubview:container];
-    // startTransform = container.transform;
-     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
+{
+    // Drawing code
 }
-
-
-- (void)turnWheel:(double)angle {
-//    container.transform = CGAffineTransformRotate(startTransform, angle);
-//    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)angle)] :angle];
-}
+*/
 
 - (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
     
@@ -58,7 +37,7 @@ static float existingAngle;
     float dx = touchPoint.x - center.x;
     float dy = touchPoint.y - center.y;
     float dist = sqrt(dx*dx + dy*dy);
-
+    
     if (dist < 40 || dist > 100)
     {
         // forcing a tap to be on the ferrule
@@ -97,6 +76,15 @@ static float existingAngle;
         }
     }
     
+    // for HalfSteeringWheel we only want to accept values in the range [-90, 90]
+        if (currentAngle > 90) {
+            currentAngle = 90;
+        } else if (currentAngle < -90) {
+            currentAngle = -90;
+        }
+    existingAngle = currentAngle;
+
+    
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
     
     return YES;
@@ -116,19 +104,24 @@ static float existingAngle;
     float angleDifference = existingAngle - ang;
     container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
-    currentAngle = RADIANS_TO_DEGREES(ang) + 90;
-    //currentAngle = existingAngle - RADIANS_TO_DEGREES(angleDifference);
+    currentAngle = existingAngle - RADIANS_TO_DEGREES(angleDifference);
     if (currentAngle > 180) {
         while (currentAngle > 180) {
             currentAngle -=360;
         }
-    } else if (currentAngle <= -180) {
+    } else if (currentAngle <= -180){
         while (currentAngle <= -180) {
             currentAngle +=360;
         }
     }
+    
+    // for HalfSteeringWheel we only want to accept values in the range [-90, 90]
+    if (currentAngle > 90) {
+        currentAngle = 90;
+    } else if (currentAngle < -90) {
+        currentAngle = -90;
+    }
     existingAngle = currentAngle;
-    NSLog(@"Current angle: %f", currentAngle);
     
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
     

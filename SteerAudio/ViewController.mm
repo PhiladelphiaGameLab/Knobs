@@ -36,13 +36,13 @@
     Sonic::createWorld();
     audioObj1 = Sonic::addAudioObject("Waterfall.wav", 0, 1, 0);
     
-    steeringWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 200, 200) andDelegate:self];
-    steeringWheel.center = CGPointMake(160, 240);
+    steeringWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) andDelegate:self];
+    steeringWheel.center = CGPointMake(160, 200);
     [self.view addSubview:steeringWheel];
     
     Sonic::startPlaying();
     
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +54,8 @@
     self.azimuthMain = az;
     self.valueLabel.text = [NSString stringWithFormat:@"%f", 180/3.142*(azimuthMain)];
     audioObj1->setLocation(sinf(self.azimuthMain), cosf(self.azimuthMain), 0);
-    Sonic::setPlayerBearing(180/PI*(-az));
+    NSLog(@"AO Location: %f, %f", sinf(self.azimuthMain), cosf(self.azimuthMain));
+    // Sonic::setPlayerBearing(180/PI*(-az));
 }
 
 /*
