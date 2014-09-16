@@ -13,6 +13,7 @@
 #import "SteeringWheel.h"
 
 #define PI 3.14159
+#define DEGREES_TO_RADIANS(degrees) ((degrees) * (PI / 180.0))
 
 @interface ViewController : UIViewController<RotaryProtocol>{
     

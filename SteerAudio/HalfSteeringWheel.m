@@ -10,7 +10,7 @@
 
 @implementation HalfSteeringWheel
 
-@synthesize  delegate, container, startTransform, currentAngle, existingAngle;
+@synthesize  delegate, container, startTransform, currentAngle, previousAngle;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -46,7 +46,7 @@
     }
     
     startTransform = container.transform;
-    existingAngle = atan2(dy,dx);
+    previousAngle = atan2(dy,dx);
     
     return YES;
     
@@ -62,10 +62,10 @@
     float dy = touchPoint.y - center.y;
     float ang = atan2(dy,dx);
     
-    float angleDifference = existingAngle - ang;
+    float angleDifference = previousAngle - ang;
     container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
-    currentAngle = existingAngle - RADIANS_TO_DEGREES(angleDifference);
+    currentAngle = previousAngle - RADIANS_TO_DEGREES(angleDifference);
     if (currentAngle > 180) {
         while (currentAngle > 180) {
             currentAngle -=360;
@@ -82,7 +82,7 @@
         } else if (currentAngle < -90) {
             currentAngle = -90;
         }
-    existingAngle = currentAngle;
+    previousAngle = currentAngle;
 
     
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
@@ -101,10 +101,10 @@
     float dy = touchPoint.y - center.y;
     float ang = atan2(dy,dx);
     
-    float angleDifference = existingAngle - ang;
+    float angleDifference = previousAngle - ang;
     container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
-    currentAngle = existingAngle - RADIANS_TO_DEGREES(angleDifference);
+    currentAngle = previousAngle - RADIANS_TO_DEGREES(angleDifference);
     if (currentAngle > 180) {
         while (currentAngle > 180) {
             currentAngle -=360;
@@ -121,7 +121,7 @@
     } else if (currentAngle < -90) {
         currentAngle = -90;
     }
-    existingAngle = currentAngle;
+    previousAngle = currentAngle;
     
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
     

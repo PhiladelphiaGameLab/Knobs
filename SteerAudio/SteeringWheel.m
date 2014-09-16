@@ -14,17 +14,17 @@
 - (void)drawWheel;
 @end
 
-static float existingAngle;
+static float previousAngle;
 
 @implementation SteeringWheel
 
-@synthesize  delegate, container, startTransform, currentAngle, existingAngle;
+@synthesize delegate, container, startTransform, currentAngle, previousAngle;
 
 - (id) initWithFrame:(CGRect)frame andDelegate:(id)del {
     
     if ((self = [super initWithFrame:frame])) {
         self.delegate = del;
-        self.existingAngle = 0;
+        self.previousAngle = 0;
         self.currentAngle = 0;
         [self drawWheel];
     }
@@ -42,7 +42,7 @@ static float existingAngle;
     container.userInteractionEnabled = NO;
     [self addSubview:container];
     // startTransform = container.transform;
-     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
+    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
 }
 
 
@@ -67,7 +67,7 @@ static float existingAngle;
     }
     
     startTransform = container.transform;
-    existingAngle = atan2(dy,dx);
+    previousAngle = atan2(dy,dx);
     
     return YES;
     
@@ -76,22 +76,25 @@ static float existingAngle;
 
 - (BOOL)continueTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event
 {
-    
+    // calculate new angle
     CGPoint touchPoint = [touch locationInView:self];
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     float dx = touchPoint.x - center.x;
     float dy = touchPoint.y - center.y;
-    float ang = atan2(dy,dx);
+    float angle = atan2(dy,dx);
     
-    float angleDifference = existingAngle - ang;
+    // rotate wheel by the difference between the current and previous angles
+    float angleDifference = previousAngle - angle;
     container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
-    currentAngle = existingAngle - RADIANS_TO_DEGREES(angleDifference);
+    // convert angle to degrees and scale to range needed by the MIT HRTF library,
+    // where zero degrees is on the y-axis, not the x-axis
+    currentAngle = RADIANS_TO_DEGREES(angle) + 90;
     if (currentAngle > 180) {
         while (currentAngle > 180) {
             currentAngle -=360;
         }
-    }else if (currentAngle <= -180){
+    } else if (currentAngle <= -180){
         while (currentAngle <= -180) {
             currentAngle +=360;
         }
@@ -106,18 +109,20 @@ static float existingAngle;
 
 - (void)endTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event
 {
-    
+    // calculate new angle
     CGPoint touchPoint = [touch locationInView:self];
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     float dx = touchPoint.x - center.x;
     float dy = touchPoint.y - center.y;
-    float ang = atan2(dy,dx);
+    float angle = atan2(dy,dx);
     
-    float angleDifference = existingAngle - ang;
+    // rotate wheel by the difference between the current and previous angles
+    float angleDifference = previousAngle - angle;
     container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
-    currentAngle = RADIANS_TO_DEGREES(ang) + 90;
-    //currentAngle = existingAngle - RADIANS_TO_DEGREES(angleDifference);
+    // convert angle to degrees and scale to range needed by the MIT HRTF library,
+    // where zero degrees is on the y-axis, not the x-axis
+    currentAngle = RADIANS_TO_DEGREES(angle) + 90;
     if (currentAngle > 180) {
         while (currentAngle > 180) {
             currentAngle -=360;
@@ -127,11 +132,8 @@ static float existingAngle;
             currentAngle +=360;
         }
     }
-    existingAngle = currentAngle;
-    NSLog(@"Current angle: %f", currentAngle);
-    
+    previousAngle = currentAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
-    
 }
 
 

@@ -16,7 +16,7 @@
 @property (weak) id <RotaryProtocol> delegate;
 @property (nonatomic, strong) UIView *container;
 @property CGAffineTransform startTransform;
-@property float currentAngle, existingAngle;
+@property float currentAngle, previousAngle;
 
 - (id) initWithFrame:(CGRect)frame andDelegate:(id)del;
 - (void)turnWheel:(double)angle;

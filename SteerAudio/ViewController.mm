@@ -34,6 +34,7 @@
     
     self.azimuthMain = 0;
     Sonic::createWorld();
+    Sonic::setPlayerBearing(0.0);
     audioObj1 = Sonic::addAudioObject("Waterfall.wav", 0, 1, 0);
     
     steeringWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) andDelegate:self];
@@ -52,9 +53,11 @@
 
 - (void) wheelDidChangeValue:(NSString *)newValue  :(float)az{
     self.azimuthMain = az;
-    self.valueLabel.text = [NSString stringWithFormat:@"%f", 180/3.142*(azimuthMain)];
-    audioObj1->setLocation(sinf(self.azimuthMain), cosf(self.azimuthMain), 0);
-    NSLog(@"AO Location: %f, %f", sinf(self.azimuthMain), cosf(self.azimuthMain));
+    self.valueLabel.text = [NSString stringWithFormat:@"%f", (180/3.142)*azimuthMain];
+    audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuthMain)), cosf(DEGREES_TO_RADIANS(self.azimuthMain)), 0);
+    NSLog(@"angle: %f", self.azimuthMain);
+    Location loc = audioObj1->getLocation();
+    NSLog(@"location: %f, %f", loc.getX(), loc.getY());
     // Sonic::setPlayerBearing(180/PI*(-az));
 }
 
