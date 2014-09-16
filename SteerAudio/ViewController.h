@@ -18,6 +18,7 @@
 
 @interface ViewController : UIViewController<RotaryProtocol>{
     
+    // TODO: Delete some of these?
     CMMotionManager *motionManager;
     NSTimer *timer;
     double originalYaw;
@@ -25,7 +26,9 @@
     HalfSteeringWheel *elevationWheel;
 }
 
-@property (nonatomic, strong) UILabel *valueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pitchLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yawLabel;
+
 @property (atomic) float azimuth;
 @property (atomic) float elevation;
 @property CustomAudioUnit *customAudioUnit;
