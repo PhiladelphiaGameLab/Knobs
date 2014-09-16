@@ -11,6 +11,7 @@
 #include "SonicLibrary/Sonic.h"
 #import <CoreMotion/CoreMotion.h>
 #import "SteeringWheel.h"
+#import "HalfSteeringWheel.h"
 
 #define PI 3.14159
 #define DEGREES_TO_RADIANS(degrees) ((degrees) * (PI / 180.0))
@@ -20,11 +21,13 @@
     CMMotionManager *motionManager;
     NSTimer *timer;
     double originalYaw;
-    SteeringWheel *steeringWheel;
+    SteeringWheel *azimuthWheel;
+    HalfSteeringWheel *elevationWheel;
 }
 
 @property (nonatomic, strong) UILabel *valueLabel;
-@property (atomic) float azimuthMain;
+@property (atomic) float azimuth;
+@property (atomic) float elevation;
 @property CustomAudioUnit *customAudioUnit;
 @property AudioObj *audioObj1;
 

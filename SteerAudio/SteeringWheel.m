@@ -14,8 +14,6 @@
 - (void)drawWheel;
 @end
 
-static float previousAngle;
-
 @implementation SteeringWheel
 
 @synthesize delegate, container, startTransform, currentAngle, previousAngle;
@@ -73,7 +71,6 @@ static float previousAngle;
     
 }
 
-
 - (BOOL)continueTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event
 {
     // calculate new angle
@@ -103,7 +100,6 @@ static float previousAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
     
     return YES;
-    
 }
 
 
@@ -117,7 +113,10 @@ static float previousAngle;
     float angle = atan2(dy,dx);
     
     // rotate wheel by the difference between the current and previous angles
+    NSLog(@"Previous Angle: %f", previousAngle);
     float angleDifference = previousAngle - angle;
+    NSLog(@"angleDifference: %f", angleDifference);
+
     container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
@@ -132,7 +131,8 @@ static float previousAngle;
             currentAngle +=360;
         }
     }
-    previousAngle = currentAngle;
+    
+    // previousAngle = currentAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
 }
 
