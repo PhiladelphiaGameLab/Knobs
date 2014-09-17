@@ -43,7 +43,6 @@
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
 }
 
-
 - (void)turnWheel:(double)angle {
 //    container.transform = CGAffineTransformRotate(startTransform, angle);
 //    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)angle)] :angle];

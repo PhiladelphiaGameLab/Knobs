@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 525, 120, 30)];
     valueLabel.textAlignment = NSTextAlignmentCenter;
     valueLabel.textColor = [UIColor lightGrayColor];

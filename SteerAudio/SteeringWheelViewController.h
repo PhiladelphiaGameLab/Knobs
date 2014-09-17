@@ -11,7 +11,8 @@
 @interface SteeringWheelViewController : ViewController
 
 @property (nonatomic, strong) SteeringWheel *wheel;
-@property (nonatomic, strong) UILabel *label;
-@property (nonatomic, strong) UILabel *value;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *value;
+@property (weak, nonatomic) IBOutlet UIImageView *wheel;
 
 @end

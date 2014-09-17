@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UIView *container;
 @property CGAffineTransform startTransform;
 @property float currentAngle, previousAngle;
+@property (nonatomic, strong) UIImageView *wheel;
 
 - (id) initWithFrame:(CGRect)frame andDelegate:(id)del;
 - (void)turnWheel:(double)angle;
