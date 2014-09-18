@@ -37,7 +37,7 @@
     Sonic::setPlayerBearing(0.0);
     audioObj1 = Sonic::addAudioObject("Waterfall.wav", 0, 1, 0);
     
-    steeringWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) andDelegate:self];
+    steeringWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"Yaw" ZeroPosition:M_PI/2.0 Delegate:self];
     steeringWheel.center = CGPointMake(160, 200);
     [self.view addSubview:steeringWheel];
     

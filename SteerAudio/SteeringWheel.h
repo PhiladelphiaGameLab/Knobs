@@ -14,10 +14,15 @@
 @interface SteeringWheel : UIControl
 
 @property (weak) id <RotaryProtocol> delegate;
-@property (nonatomic, strong) UIView *container;
+//@property (nonatomic, strong) UIView *container;
 @property CGAffineTransform startTransform;
 @property float currentAngle, previousAngle;
+@property UIImageView *bg;
+@property float zeroPosition;   // Position in degrees along the standard
+                                // unit circle to be designated as "zero degrees".
 
-- (id) initWithFrame:(CGRect)frame andDelegate:(id)del;
+@property UILabel *valueLabel;
+
+- (id)initWithFrame:(CGRect)frame Label:(NSString*)text ZeroPosition:(float)zeroPos Delegate:(id)del;
 - (void)turnWheel:(double)angle;
 @end

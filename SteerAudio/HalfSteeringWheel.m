@@ -10,7 +10,7 @@
 
 @implementation HalfSteeringWheel
 
-@synthesize  delegate, container, startTransform, currentAngle, previousAngle;
+@synthesize  delegate, /* container,*/ startTransform, currentAngle, previousAngle;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -45,7 +45,7 @@
         return NO;
     }
     
-    startTransform = container.transform;
+    startTransform = self.bg.transform;
     previousAngle = atan2(dy,dx);
     
     return YES;
@@ -63,7 +63,7 @@
     float ang = atan2(dy,dx);
     
     float angleDifference = previousAngle - ang;
-    container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
+    self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
     currentAngle = previousAngle - RADIANS_TO_DEGREES(angleDifference);
     if (currentAngle > 180) {
@@ -102,7 +102,7 @@
     float ang = atan2(dy,dx);
     
     float angleDifference = previousAngle - ang;
-    container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
+    self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
     currentAngle = previousAngle - RADIANS_TO_DEGREES(angleDifference);
     if (currentAngle > 180) {
