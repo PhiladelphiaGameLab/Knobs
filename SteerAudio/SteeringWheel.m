@@ -103,7 +103,6 @@ static float previousAngle;
     previousAngle = atan2(dy,dx);
     
     return YES;
-    
 }
 
 
@@ -123,6 +122,7 @@ static float previousAngle;
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
     // where zero degrees is on the y-axis, not the x-axis
     currentAngle = RADIANS_TO_DEGREES(angle) + 90;
+
     if (currentAngle > 180) {
         while (currentAngle > 180) {
             currentAngle -=360;
@@ -133,6 +133,8 @@ static float previousAngle;
         }
     }
     
+    // self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
+
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
     
     return YES;
@@ -165,6 +167,9 @@ static float previousAngle;
             currentAngle +=360;
         }
     }
+    
+    // self.valueLabel.text = [NSString stringWithFormat:@"%f", currentAngle];
+
     previousAngle = currentAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
 }

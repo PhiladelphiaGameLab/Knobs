@@ -12,6 +12,7 @@
 #import <CoreMotion/CoreMotion.h>
 #import "SteeringWheel.h"
 
+// TODO: replace with M_PI
 #define PI 3.14159
 #define DEGREES_TO_RADIANS(degrees) ((degrees) * (PI / 180.0))
 
