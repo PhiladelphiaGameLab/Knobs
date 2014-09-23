@@ -11,6 +11,7 @@
 #include "SonicLibrary/Sonic.h"
 #import <CoreMotion/CoreMotion.h>
 #import "SteeringWheel.h"
+#import "HalfSteeringWheel.h"
 
 // TODO: replace with M_PI
 #define PI 3.14159
@@ -18,14 +19,19 @@
 
 @interface ViewController : UIViewController<RotaryProtocol>{
     
+    // TODO: Delete some of these?
     CMMotionManager *motionManager;
     NSTimer *timer;
     double originalYaw;
-    SteeringWheel *steeringWheel;
+    SteeringWheel *azimuthWheel;
+    HalfSteeringWheel *elevationWheel;
 }
 
-@property (nonatomic, strong) UILabel *valueLabel;
-@property (atomic) float azimuthMain;
+@property (weak, nonatomic) IBOutlet UILabel *pitchLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yawLabel;
+
+@property (atomic) float azimuth;
+@property (atomic) float elevation;
 @property CustomAudioUnit *customAudioUnit;
 @property AudioObj *audioObj1;
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EBEDBB819C8D6EF00579544 /* blueTracker0elevation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */; };
+		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.m */; };
 		5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */; };
 		980CD64919A69841008944E2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980CD64819A69841008944E2 /* CoreMotion.framework */; };
 		980CD64B19A6F2A0008944E2 /* blueTracker0.png in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64A19A6F2A0008944E2 /* blueTracker0.png */; };
@@ -56,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker0elevation.png; sourceTree = "<group>"; };
+		5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringWheelViewController.h; sourceTree = "<group>"; };
+		5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteeringWheelViewController.m; sourceTree = "<group>"; };
 		5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfSteeringWheel.h; sourceTree = "<group>"; };
 		5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfSteeringWheel.m; sourceTree = "<group>"; };
 		980CD64819A69841008944E2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -177,6 +182,8 @@
 				98CDC58E19899D06006A4911 /* ViewController.h */,
 				98CDC58F19899D06006A4911 /* ViewController.mm */,
 				98CDC59119899D06006A4911 /* Main.storyboard */,
+				5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */,
+				5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.m */,
 				98CDC5AD19899EF0006A4911 /* SteeringWheel.m */,
 				98CDC5AF19899F0A006A4911 /* SteeringWheel.h */,
 				5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */,
@@ -217,6 +224,7 @@
 		98CDC5AA19899D3A006A4911 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */,
 				980CD64E19A6F644008944E2 /* ChurchBells.wav */,
 				980CD64A19A6F2A0008944E2 /* blueTracker0.png */,
 				98607DE3199EA82100468464 /* AO.png */,
@@ -427,6 +435,7 @@
 				98D2744E19A4093F00CEBF28 /* 1minutetest.wav in Resources */,
 				98CDC5AC19899D59006A4911 /* ring-frame-1.jpg in Resources */,
 				98D2746119A4156200CEBF28 /* footsteps.wav in Resources */,
+				5EBEDBB819C8D6EF00579544 /* blueTracker0elevation.png in Resources */,
 				98CDC59319899D06006A4911 /* Main.storyboard in Resources */,
 				98CDC5B11989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png in Resources */,
 				98607DE4199EA82100468464 /* AO.png in Resources */,
@@ -461,6 +470,7 @@
 				98D2745619A4093F00CEBF28 /* fft.cpp in Sources */,
 				98D2745719A4093F00CEBF28 /* location.cpp in Sources */,
 				98D2745219A4093F00CEBF28 /* CustomAudioUnit.cpp in Sources */,
+				5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.m in Sources */,
 				98D2745B19A4093F00CEBF28 /* velocity.cpp in Sources */,
 				98D2745A19A4093F00CEBF28 /* Player.cpp in Sources */,
 				5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */,
