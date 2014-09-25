@@ -150,7 +150,6 @@
     // rotate wheel by the difference between the current and previous angles
     NSLog(@"Previous Angle: %f", previousAngle);
     float angleDifference = previousAngle - angle;
-<<<<<<< HEAD
     self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
    
     // convert angle to degrees and scale to range needed by the MIT HRTF library,

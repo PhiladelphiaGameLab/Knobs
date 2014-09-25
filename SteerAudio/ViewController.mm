@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-@synthesize  valueLabel, azimuth, elevation, audioObj1;
+@synthesize valueLabel, azimuth, elevation, audioObj1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,19 +38,12 @@
     Sonic::setPlayerBearing(0.0);
     audioObj1 = Sonic::addAudioObject("Waterfall.wav", 0, 1, 0);
     
-<<<<<<< HEAD
-    steeringWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"YAW" ZeroPosition:M_PI/2.0 Delegate:self];
-    steeringWheel.center = CGPointMake(160, 200);
-    [self.view addSubview:steeringWheel];
-=======
-    azimuthWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) andDelegate:self];
-    azimuthWheel.center = CGPointMake(160, 130);
-    
-    elevationWheel = [[HalfSteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) andDelegate:self];
-    elevationWheel.center = CGPointMake(160, 345);
->>>>>>> oldLibrary
-    
+    azimuthWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"YAW" ZeroPosition:M_PI/2.0 Delegate:self];
+    azimuthWheel.center = CGPointMake(160, 200);
     [self.view addSubview:azimuthWheel];
+    
+    elevationWheel = [[HalfSteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"PITCH" ZeroPosition:0.0 Delegate:self];
+    elevationWheel.center = CGPointMake(160, 345);
     [self.view addSubview:elevationWheel];
 
     Sonic::startPlaying();
@@ -64,16 +57,14 @@
 }
 
 - (void) wheelDidChangeValue:(NSString *)newValue  :(float)az{
-    self.azimuthMain = az;
-    self.valueLabel.text = [NSString stringWithFormat:@"%f", RADIANS_TO_DEGREES(azimuthMain)];
-    audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuthMain)), cosf(DEGREES_TO_RADIANS(self.azimuthMain)), 0);
-    NSLog(@"angle: %f", self.azimuthMain);
+    self.azimuth = az;
+    self.valueLabel.text = [NSString stringWithFormat:@"%f", RADIANS_TO_DEGREES(azimuth)];
+    audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.azimuth)), 0);
+    NSLog(@"angle: %f", self.azimuth);
    Location loc = audioObj1->getLocation();
     NSLog(@"location: %f, %f", loc.getX(), loc.getY());
     // Sonic::setPlayerBearing(180/PI*(-az));
 }
-
-
 
 /*
 -(void) doGyroUpdate {

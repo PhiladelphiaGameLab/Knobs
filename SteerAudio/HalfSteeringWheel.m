@@ -72,9 +72,6 @@
     float dy = touchPoint.y - center.y;
     float ang = atan2(dy,dx);
     
-    float angleDifference = previousAngle - ang;
-    self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
-    
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
     // where zero degrees is on the y-axis, not the x-axis
     currentAngle = RADIANS_TO_DEGREES(angle) + 90;
@@ -97,7 +94,7 @@
     
     // rotate wheel by the difference between the current and previous angles
     float angleDifference = previousAngle - DEGREES_TO_RADIANS(currentAngle);
-    container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
+    self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
     return YES;
@@ -142,7 +139,7 @@
     float angleDifference = previousAngle - DEGREES_TO_RADIANS(currentAngle);
     
     NSLog(@"Rotating half steering wheel %f radians...", angleDifference);
-    container.transform = CGAffineTransformRotate(startTransform, -angleDifference);
+    self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
 
     // previousAngle = currentAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];

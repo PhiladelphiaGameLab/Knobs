@@ -12,7 +12,7 @@
 //#include <CoreAudio/CoreAudioTypes.h>
 //#include <AudioUnit/AudioUnit.h>
 #include <AudioToolbox/AudioToolbox.h>
-#include <iostream>
+//#include <iostream>
 
 #include "../include/Mixer3D.h"
 

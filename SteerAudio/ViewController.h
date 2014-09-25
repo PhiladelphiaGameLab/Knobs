@@ -29,6 +29,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *pitchLabel;
 @property (weak, nonatomic) IBOutlet UILabel *yawLabel;
+@property (weak, nonatomic) UILabel *valueLabel;
 
 @property (atomic) float azimuth;
 @property (atomic) float elevation;

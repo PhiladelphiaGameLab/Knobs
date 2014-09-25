@@ -7,6 +7,7 @@
 //
 
 #include "CustomAudioUnit.h"
+#include <iostream>
 
 static OSStatus recordingCallback (void *inRefCon, AudioUnitRenderActionFlags *ioActionFlags, const AudioTimeStamp *inTimeStamp, UInt32 inBusNumber, UInt32 inNumberFrames, AudioBufferList *ioData) {
     
