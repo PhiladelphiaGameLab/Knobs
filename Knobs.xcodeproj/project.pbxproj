@@ -310,8 +310,7 @@
 				98CDC59419899D06006A4911 /* Images.xcassets */,
 				98CDC58719899D06006A4911 /* Supporting Files */,
 			);
-			name = Knobs;
-			path = SteerAudio;
+			path = Knobs;
 			sourceTree = "<group>";
 		};
 		98CDC58719899D06006A4911 /* Supporting Files */ = {
@@ -330,7 +329,7 @@
 				98CDC59E19899D06006A4911 /* Supporting Files */,
 			);
 			name = KnobTests;
-			path = SteerAudioTests;
+			path = KnobsTests;
 			sourceTree = "<group>";
 		};
 		98CDC59E19899D06006A4911 /* Supporting Files */ = {
