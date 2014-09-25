@@ -130,7 +130,7 @@
         }
     }
     
-    // self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
+    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
 
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
     
@@ -165,7 +165,7 @@
         }
     }
     
-    // self.valueLabel.text = [NSString stringWithFormat:@"%f", currentAngle];
+    self.valueLabel.text = [NSString stringWithFormat:@"%f", currentAngle];
     previousAngle = currentAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
 }

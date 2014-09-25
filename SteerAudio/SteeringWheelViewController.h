@@ -13,6 +13,6 @@
 @property (nonatomic, strong) SteeringWheel *wheel;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UILabel *value;
-@property (weak, nonatomic) IBOutlet UIImageView *wheel;
+// @property (weak, nonatomic) IBOutlet UIImageView *wheel;
 
 @end

@@ -7,12 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E27A14F19D46F1D00AA1635 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A11C19D46F1D00AA1635 /* .gitattributes */; };
+		5E27A15019D46F1D00AA1635 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A11D19D46F1D00AA1635 /* .gitignore */; };
+		5E27A15119D46F1D00AA1635 /* 1minutetest.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A12C19D46F1D00AA1635 /* 1minutetest.wav */; };
+		5E27A15219D46F1D00AA1635 /* 3m40stest.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A12D19D46F1D00AA1635 /* 3m40stest.wav */; };
+		5E27A15319D46F1D00AA1635 /* catmeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A12E19D46F1D00AA1635 /* catmeow.wav */; };
+		5E27A15419D46F1D00AA1635 /* input1mono.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A12F19D46F1D00AA1635 /* input1mono.wav */; };
+		5E27A15519D46F1D00AA1635 /* CustomAudioUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A13119D46F1D00AA1635 /* CustomAudioUnit.cpp */; };
+		5E27A15619D46F1D00AA1635 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A13319D46F1D00AA1635 /* LICENSE */; };
+		5E27A15719D46F1D00AA1635 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A14019D46F1D00AA1635 /* README.md */; };
+		5E27A15819D46F1D00AA1635 /* Sonic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14119D46F1D00AA1635 /* Sonic.cpp */; };
+		5E27A15919D46F1D00AA1635 /* AudioObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14419D46F1D00AA1635 /* AudioObj.cpp */; };
+		5E27A15A19D46F1D00AA1635 /* complex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14519D46F1D00AA1635 /* complex.cpp */; };
+		5E27A15B19D46F1D00AA1635 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14619D46F1D00AA1635 /* fft.cpp */; };
+		5E27A15C19D46F1D00AA1635 /* location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14719D46F1D00AA1635 /* location.cpp */; };
+		5E27A15D19D46F1D00AA1635 /* mit_hrtf_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14819D46F1D00AA1635 /* mit_hrtf_lib.c */; };
+		5E27A15E19D46F1D00AA1635 /* Mixer3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14919D46F1D00AA1635 /* Mixer3D.cpp */; };
+		5E27A15F19D46F1D00AA1635 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14A19D46F1D00AA1635 /* Player.cpp */; };
+		5E27A16019D46F1D00AA1635 /* velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14B19D46F1D00AA1635 /* velocity.cpp */; };
+		5E27A16119D46F1D00AA1635 /* WavObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14C19D46F1D00AA1635 /* WavObject.mm */; };
+		5E27A16219D46F1D00AA1635 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14D19D46F1D00AA1635 /* World.cpp */; };
+		5E27A16319D46F1D00AA1635 /* WORKFLOW.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A14E19D46F1D00AA1635 /* WORKFLOW.md */; };
 		5EBEDBB819C8D6EF00579544 /* blueTracker0elevation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */; };
-		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.m */; };
+		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */; };
 		5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */; };
 		980CD64919A69841008944E2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980CD64819A69841008944E2 /* CoreMotion.framework */; };
 		980CD64B19A6F2A0008944E2 /* blueTracker0.png in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64A19A6F2A0008944E2 /* blueTracker0.png */; };
-		980CD64D19A6F496008944E2 /* Waterfall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64C19A6F496008944E2 /* Waterfall.wav */; };
 		980CD64F19A6F644008944E2 /* ChurchBells.wav in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64E19A6F644008944E2 /* ChurchBells.wav */; };
 		98607DE4199EA82100468464 /* AO.png in Resources */ = {isa = PBXBuildFile; fileRef = 98607DE3199EA82100468464 /* AO.png */; };
 		98BE200D198C4A37005708AE /* blueTracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE200C198C4A37005708AE /* blueTracker.png */; };
@@ -25,24 +45,6 @@
 		98CDC5AC19899D59006A4911 /* ring-frame-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98CDC5AB19899D59006A4911 /* ring-frame-1.jpg */; };
 		98CDC5AE19899EF0006A4911 /* SteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC5AD19899EF0006A4911 /* SteeringWheel.m */; };
 		98CDC5B11989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 98CDC5B01989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png */; };
-		98D2744E19A4093F00CEBF28 /* 1minutetest.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98D2742E19A4093F00CEBF28 /* 1minutetest.wav */; };
-		98D2744F19A4093F00CEBF28 /* 3m40stest.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98D2742F19A4093F00CEBF28 /* 3m40stest.wav */; };
-		98D2745019A4093F00CEBF28 /* catmeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98D2743019A4093F00CEBF28 /* catmeow.wav */; };
-		98D2745119A4093F00CEBF28 /* input1mono.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98D2743119A4093F00CEBF28 /* input1mono.wav */; };
-		98D2745219A4093F00CEBF28 /* CustomAudioUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2743319A4093F00CEBF28 /* CustomAudioUnit.cpp */; };
-		98D2745319A4093F00CEBF28 /* Sonic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744119A4093F00CEBF28 /* Sonic.cpp */; };
-		98D2745419A4093F00CEBF28 /* AudioObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744419A4093F00CEBF28 /* AudioObj.cpp */; };
-		98D2745519A4093F00CEBF28 /* complex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744519A4093F00CEBF28 /* complex.cpp */; };
-		98D2745619A4093F00CEBF28 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744619A4093F00CEBF28 /* fft.cpp */; };
-		98D2745719A4093F00CEBF28 /* location.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744719A4093F00CEBF28 /* location.cpp */; };
-		98D2745819A4093F00CEBF28 /* mit_hrtf_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744819A4093F00CEBF28 /* mit_hrtf_lib.c */; };
-		98D2745919A4093F00CEBF28 /* Mixer3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744919A4093F00CEBF28 /* Mixer3D.cpp */; };
-		98D2745A19A4093F00CEBF28 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744A19A4093F00CEBF28 /* Player.cpp */; };
-		98D2745B19A4093F00CEBF28 /* velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744B19A4093F00CEBF28 /* velocity.cpp */; };
-		98D2745C19A4093F00CEBF28 /* WavObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744C19A4093F00CEBF28 /* WavObject.mm */; };
-		98D2745D19A4093F00CEBF28 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98D2744D19A4093F00CEBF28 /* World.cpp */; };
-		98D2746019A4156200CEBF28 /* dripping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98D2745E19A4156200CEBF28 /* dripping.wav */; };
-		98D2746119A4156200CEBF28 /* footsteps.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98D2745F19A4156200CEBF28 /* footsteps.wav */; };
 		98F4FDB019930D39001BB9B6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F4FDAF19930D38001BB9B6 /* AudioToolbox.framework */; };
 		98F4FDB219930D43001BB9B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F4FDB119930D43001BB9B6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -58,14 +60,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E27A11C19D46F1D00AA1635 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		5E27A11D19D46F1D00AA1635 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5E27A11F19D46F1D00AA1635 /* AudioObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioObj.h; sourceTree = "<group>"; };
+		5E27A12019D46F1D00AA1635 /* CircBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircBuff.h; sourceTree = "<group>"; };
+		5E27A12119D46F1D00AA1635 /* complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = complex.h; sourceTree = "<group>"; };
+		5E27A12219D46F1D00AA1635 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
+		5E27A12319D46F1D00AA1635 /* location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = location.h; sourceTree = "<group>"; };
+		5E27A12419D46F1D00AA1635 /* mit_hrtf_filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_filter.h; sourceTree = "<group>"; };
+		5E27A12519D46F1D00AA1635 /* mit_hrtf_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_lib.h; sourceTree = "<group>"; };
+		5E27A12619D46F1D00AA1635 /* Mixer3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer3D.h; sourceTree = "<group>"; };
+		5E27A12719D46F1D00AA1635 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		5E27A12819D46F1D00AA1635 /* velocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = velocity.h; sourceTree = "<group>"; };
+		5E27A12919D46F1D00AA1635 /* WavObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavObject.h; sourceTree = "<group>"; };
+		5E27A12A19D46F1D00AA1635 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		5E27A12C19D46F1D00AA1635 /* 1minutetest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1minutetest.wav; sourceTree = "<group>"; };
+		5E27A12D19D46F1D00AA1635 /* 3m40stest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3m40stest.wav; sourceTree = "<group>"; };
+		5E27A12E19D46F1D00AA1635 /* catmeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catmeow.wav; sourceTree = "<group>"; };
+		5E27A12F19D46F1D00AA1635 /* input1mono.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = input1mono.wav; sourceTree = "<group>"; };
+		5E27A13119D46F1D00AA1635 /* CustomAudioUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomAudioUnit.cpp; sourceTree = "<group>"; };
+		5E27A13219D46F1D00AA1635 /* CustomAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAudioUnit.h; sourceTree = "<group>"; };
+		5E27A13319D46F1D00AA1635 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5E27A13719D46F1D00AA1635 /* mit_hrtf_diffuse_44100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_diffuse_44100.h; sourceTree = "<group>"; };
+		5E27A13819D46F1D00AA1635 /* mit_hrtf_diffuse_48000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_diffuse_48000.h; sourceTree = "<group>"; };
+		5E27A13919D46F1D00AA1635 /* mit_hrtf_diffuse_88200.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_diffuse_88200.h; sourceTree = "<group>"; };
+		5E27A13A19D46F1D00AA1635 /* mit_hrtf_diffuse_96000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_diffuse_96000.h; sourceTree = "<group>"; };
+		5E27A13C19D46F1D00AA1635 /* mit_hrtf_normal_44100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_normal_44100.h; sourceTree = "<group>"; };
+		5E27A13D19D46F1D00AA1635 /* mit_hrtf_normal_48000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_normal_48000.h; sourceTree = "<group>"; };
+		5E27A13E19D46F1D00AA1635 /* mit_hrtf_normal_88200.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_normal_88200.h; sourceTree = "<group>"; };
+		5E27A13F19D46F1D00AA1635 /* mit_hrtf_normal_96000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_normal_96000.h; sourceTree = "<group>"; };
+		5E27A14019D46F1D00AA1635 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		5E27A14119D46F1D00AA1635 /* Sonic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sonic.cpp; sourceTree = "<group>"; };
+		5E27A14219D46F1D00AA1635 /* Sonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sonic.h; sourceTree = "<group>"; };
+		5E27A14419D46F1D00AA1635 /* AudioObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioObj.cpp; sourceTree = "<group>"; };
+		5E27A14519D46F1D00AA1635 /* complex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = complex.cpp; sourceTree = "<group>"; };
+		5E27A14619D46F1D00AA1635 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
+		5E27A14719D46F1D00AA1635 /* location.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = location.cpp; sourceTree = "<group>"; };
+		5E27A14819D46F1D00AA1635 /* mit_hrtf_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mit_hrtf_lib.c; sourceTree = "<group>"; };
+		5E27A14919D46F1D00AA1635 /* Mixer3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mixer3D.cpp; sourceTree = "<group>"; };
+		5E27A14A19D46F1D00AA1635 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		5E27A14B19D46F1D00AA1635 /* velocity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = velocity.cpp; sourceTree = "<group>"; };
+		5E27A14C19D46F1D00AA1635 /* WavObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavObject.mm; sourceTree = "<group>"; };
+		5E27A14D19D46F1D00AA1635 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		5E27A14E19D46F1D00AA1635 /* WORKFLOW.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WORKFLOW.md; sourceTree = "<group>"; };
 		5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker0elevation.png; sourceTree = "<group>"; };
 		5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringWheelViewController.h; sourceTree = "<group>"; };
-		5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteeringWheelViewController.m; sourceTree = "<group>"; };
+		5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SteeringWheelViewController.mm; sourceTree = "<group>"; };
 		5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfSteeringWheel.h; sourceTree = "<group>"; };
 		5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfSteeringWheel.m; sourceTree = "<group>"; };
 		980CD64819A69841008944E2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		980CD64A19A6F2A0008944E2 /* blueTracker0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker0.png; sourceTree = "<group>"; };
-		980CD64C19A6F496008944E2 /* Waterfall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Waterfall.wav; sourceTree = "<group>"; };
 		980CD64E19A6F644008944E2 /* ChurchBells.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ChurchBells.wav; sourceTree = "<group>"; };
 		98607DE3199EA82100468464 /* AO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AO.png; sourceTree = "<group>"; };
 		98BE200C198C4A37005708AE /* blueTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker.png; sourceTree = "<group>"; };
@@ -86,46 +130,6 @@
 		98CDC5AD19899EF0006A4911 /* SteeringWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteeringWheel.m; sourceTree = "<group>"; };
 		98CDC5AF19899F0A006A4911 /* SteeringWheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SteeringWheel.h; sourceTree = "<group>"; };
 		98CDC5B01989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "450px-White_circle_in_blue_background.svg.png"; sourceTree = "<group>"; };
-		98D2742119A4093F00CEBF28 /* AudioObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioObj.h; sourceTree = "<group>"; };
-		98D2742219A4093F00CEBF28 /* CircBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircBuff.h; sourceTree = "<group>"; };
-		98D2742319A4093F00CEBF28 /* complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = complex.h; sourceTree = "<group>"; };
-		98D2742419A4093F00CEBF28 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
-		98D2742519A4093F00CEBF28 /* location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = location.h; sourceTree = "<group>"; };
-		98D2742619A4093F00CEBF28 /* mit_hrtf_filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_filter.h; sourceTree = "<group>"; };
-		98D2742719A4093F00CEBF28 /* mit_hrtf_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_lib.h; sourceTree = "<group>"; };
-		98D2742819A4093F00CEBF28 /* Mixer3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer3D.h; sourceTree = "<group>"; };
-		98D2742919A4093F00CEBF28 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		98D2742A19A4093F00CEBF28 /* velocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = velocity.h; sourceTree = "<group>"; };
-		98D2742B19A4093F00CEBF28 /* WavObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavObject.h; sourceTree = "<group>"; };
-		98D2742C19A4093F00CEBF28 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
-		98D2742E19A4093F00CEBF28 /* 1minutetest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1minutetest.wav; sourceTree = "<group>"; };
-		98D2742F19A4093F00CEBF28 /* 3m40stest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3m40stest.wav; sourceTree = "<group>"; };
-		98D2743019A4093F00CEBF28 /* catmeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catmeow.wav; sourceTree = "<group>"; };
-		98D2743119A4093F00CEBF28 /* input1mono.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = input1mono.wav; sourceTree = "<group>"; };
-		98D2743319A4093F00CEBF28 /* CustomAudioUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomAudioUnit.cpp; sourceTree = "<group>"; };
-		98D2743419A4093F00CEBF28 /* CustomAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAudioUnit.h; sourceTree = "<group>"; };
-		98D2743819A4093F00CEBF28 /* mit_hrtf_diffuse_44100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_diffuse_44100.h; sourceTree = "<group>"; };
-		98D2743919A4093F00CEBF28 /* mit_hrtf_diffuse_48000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_diffuse_48000.h; sourceTree = "<group>"; };
-		98D2743A19A4093F00CEBF28 /* mit_hrtf_diffuse_88200.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_diffuse_88200.h; sourceTree = "<group>"; };
-		98D2743B19A4093F00CEBF28 /* mit_hrtf_diffuse_96000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_diffuse_96000.h; sourceTree = "<group>"; };
-		98D2743D19A4093F00CEBF28 /* mit_hrtf_normal_44100.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_normal_44100.h; sourceTree = "<group>"; };
-		98D2743E19A4093F00CEBF28 /* mit_hrtf_normal_48000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_normal_48000.h; sourceTree = "<group>"; };
-		98D2743F19A4093F00CEBF28 /* mit_hrtf_normal_88200.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_normal_88200.h; sourceTree = "<group>"; };
-		98D2744019A4093F00CEBF28 /* mit_hrtf_normal_96000.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mit_hrtf_normal_96000.h; sourceTree = "<group>"; };
-		98D2744119A4093F00CEBF28 /* Sonic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sonic.cpp; sourceTree = "<group>"; };
-		98D2744219A4093F00CEBF28 /* Sonic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sonic.h; sourceTree = "<group>"; };
-		98D2744419A4093F00CEBF28 /* AudioObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioObj.cpp; sourceTree = "<group>"; };
-		98D2744519A4093F00CEBF28 /* complex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = complex.cpp; sourceTree = "<group>"; };
-		98D2744619A4093F00CEBF28 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
-		98D2744719A4093F00CEBF28 /* location.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = location.cpp; sourceTree = "<group>"; };
-		98D2744819A4093F00CEBF28 /* mit_hrtf_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mit_hrtf_lib.c; sourceTree = "<group>"; };
-		98D2744919A4093F00CEBF28 /* Mixer3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mixer3D.cpp; sourceTree = "<group>"; };
-		98D2744A19A4093F00CEBF28 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		98D2744B19A4093F00CEBF28 /* velocity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = velocity.cpp; sourceTree = "<group>"; };
-		98D2744C19A4093F00CEBF28 /* WavObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavObject.mm; sourceTree = "<group>"; };
-		98D2744D19A4093F00CEBF28 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
-		98D2745E19A4156200CEBF28 /* dripping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dripping.wav; sourceTree = "<group>"; };
-		98D2745F19A4156200CEBF28 /* footsteps.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = footsteps.wav; sourceTree = "<group>"; };
 		98F4FDAF19930D38001BB9B6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		98F4FDB119930D43001BB9B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -151,12 +155,127 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E27A11B19D46F1D00AA1635 /* Sonic */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A11C19D46F1D00AA1635 /* .gitattributes */,
+				5E27A11D19D46F1D00AA1635 /* .gitignore */,
+				5E27A11E19D46F1D00AA1635 /* include */,
+				5E27A12B19D46F1D00AA1635 /* InputData */,
+				5E27A13019D46F1D00AA1635 /* iOS */,
+				5E27A13319D46F1D00AA1635 /* LICENSE */,
+				5E27A13419D46F1D00AA1635 /* MIT_HRTF_Library */,
+				5E27A14019D46F1D00AA1635 /* README.md */,
+				5E27A14119D46F1D00AA1635 /* Sonic.cpp */,
+				5E27A14219D46F1D00AA1635 /* Sonic.h */,
+				5E27A14319D46F1D00AA1635 /* source */,
+				5E27A14E19D46F1D00AA1635 /* WORKFLOW.md */,
+			);
+			path = Sonic;
+			sourceTree = SOURCE_ROOT;
+		};
+		5E27A11E19D46F1D00AA1635 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A11F19D46F1D00AA1635 /* AudioObj.h */,
+				5E27A12019D46F1D00AA1635 /* CircBuff.h */,
+				5E27A12119D46F1D00AA1635 /* complex.h */,
+				5E27A12219D46F1D00AA1635 /* fft.h */,
+				5E27A12319D46F1D00AA1635 /* location.h */,
+				5E27A12419D46F1D00AA1635 /* mit_hrtf_filter.h */,
+				5E27A12519D46F1D00AA1635 /* mit_hrtf_lib.h */,
+				5E27A12619D46F1D00AA1635 /* Mixer3D.h */,
+				5E27A12719D46F1D00AA1635 /* Player.h */,
+				5E27A12819D46F1D00AA1635 /* velocity.h */,
+				5E27A12919D46F1D00AA1635 /* WavObject.h */,
+				5E27A12A19D46F1D00AA1635 /* World.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5E27A12B19D46F1D00AA1635 /* InputData */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A12C19D46F1D00AA1635 /* 1minutetest.wav */,
+				5E27A12D19D46F1D00AA1635 /* 3m40stest.wav */,
+				5E27A12E19D46F1D00AA1635 /* catmeow.wav */,
+				5E27A12F19D46F1D00AA1635 /* input1mono.wav */,
+			);
+			path = InputData;
+			sourceTree = "<group>";
+		};
+		5E27A13019D46F1D00AA1635 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A13119D46F1D00AA1635 /* CustomAudioUnit.cpp */,
+				5E27A13219D46F1D00AA1635 /* CustomAudioUnit.h */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		5E27A13419D46F1D00AA1635 /* MIT_HRTF_Library */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A13519D46F1D00AA1635 /* source */,
+			);
+			path = MIT_HRTF_Library;
+			sourceTree = "<group>";
+		};
+		5E27A13519D46F1D00AA1635 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A13619D46F1D00AA1635 /* diffuse */,
+				5E27A13B19D46F1D00AA1635 /* normal */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		5E27A13619D46F1D00AA1635 /* diffuse */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A13719D46F1D00AA1635 /* mit_hrtf_diffuse_44100.h */,
+				5E27A13819D46F1D00AA1635 /* mit_hrtf_diffuse_48000.h */,
+				5E27A13919D46F1D00AA1635 /* mit_hrtf_diffuse_88200.h */,
+				5E27A13A19D46F1D00AA1635 /* mit_hrtf_diffuse_96000.h */,
+			);
+			path = diffuse;
+			sourceTree = "<group>";
+		};
+		5E27A13B19D46F1D00AA1635 /* normal */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A13C19D46F1D00AA1635 /* mit_hrtf_normal_44100.h */,
+				5E27A13D19D46F1D00AA1635 /* mit_hrtf_normal_48000.h */,
+				5E27A13E19D46F1D00AA1635 /* mit_hrtf_normal_88200.h */,
+				5E27A13F19D46F1D00AA1635 /* mit_hrtf_normal_96000.h */,
+			);
+			path = normal;
+			sourceTree = "<group>";
+		};
+		5E27A14319D46F1D00AA1635 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				5E27A14419D46F1D00AA1635 /* AudioObj.cpp */,
+				5E27A14519D46F1D00AA1635 /* complex.cpp */,
+				5E27A14619D46F1D00AA1635 /* fft.cpp */,
+				5E27A14719D46F1D00AA1635 /* location.cpp */,
+				5E27A14819D46F1D00AA1635 /* mit_hrtf_lib.c */,
+				5E27A14919D46F1D00AA1635 /* Mixer3D.cpp */,
+				5E27A14A19D46F1D00AA1635 /* Player.cpp */,
+				5E27A14B19D46F1D00AA1635 /* velocity.cpp */,
+				5E27A14C19D46F1D00AA1635 /* WavObject.mm */,
+				5E27A14D19D46F1D00AA1635 /* World.cpp */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
 		98CDC57B19899D05006A4911 = {
 			isa = PBXGroup;
 			children = (
 				980CD64819A69841008944E2 /* CoreMotion.framework */,
 				98F4FDB119930D43001BB9B6 /* Foundation.framework */,
 				98F4FDAF19930D38001BB9B6 /* AudioToolbox.framework */,
+				5E27A11B19D46F1D00AA1635 /* Sonic */,
 				98CDC58619899D06006A4911 /* SteerAudio */,
 				98CDC59D19899D06006A4911 /* SteerAudioTests */,
 				98CDC58519899D06006A4911 /* Products */,
@@ -175,7 +294,6 @@
 		98CDC58619899D06006A4911 /* SteerAudio */ = {
 			isa = PBXGroup;
 			children = (
-				98D2741F19A4093F00CEBF28 /* SonicLibrary */,
 				98CDC5AA19899D3A006A4911 /* Assets */,
 				98CDC58B19899D06006A4911 /* AppDelegate.h */,
 				98CDC58C19899D06006A4911 /* AppDelegate.m */,
@@ -183,7 +301,7 @@
 				98CDC58F19899D06006A4911 /* ViewController.mm */,
 				98CDC59119899D06006A4911 /* Main.storyboard */,
 				5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */,
-				5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.m */,
+				5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */,
 				98CDC5AD19899EF0006A4911 /* SteeringWheel.m */,
 				98CDC5AF19899F0A006A4911 /* SteeringWheel.h */,
 				5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */,
@@ -233,118 +351,6 @@
 				98CDC5AB19899D59006A4911 /* ring-frame-1.jpg */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		98D2741F19A4093F00CEBF28 /* SonicLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				98D2742019A4093F00CEBF28 /* include */,
-				98D2742D19A4093F00CEBF28 /* InputData */,
-				98D2743219A4093F00CEBF28 /* iOS */,
-				98D2743519A4093F00CEBF28 /* MIT_HRTF_Library */,
-				98D2744119A4093F00CEBF28 /* Sonic.cpp */,
-				98D2744219A4093F00CEBF28 /* Sonic.h */,
-				98D2744319A4093F00CEBF28 /* source */,
-			);
-			path = SonicLibrary;
-			sourceTree = "<group>";
-		};
-		98D2742019A4093F00CEBF28 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				98D2742119A4093F00CEBF28 /* AudioObj.h */,
-				98D2742219A4093F00CEBF28 /* CircBuff.h */,
-				98D2742319A4093F00CEBF28 /* complex.h */,
-				98D2742419A4093F00CEBF28 /* fft.h */,
-				98D2742519A4093F00CEBF28 /* location.h */,
-				98D2742619A4093F00CEBF28 /* mit_hrtf_filter.h */,
-				98D2742719A4093F00CEBF28 /* mit_hrtf_lib.h */,
-				98D2742819A4093F00CEBF28 /* Mixer3D.h */,
-				98D2742919A4093F00CEBF28 /* Player.h */,
-				98D2742A19A4093F00CEBF28 /* velocity.h */,
-				98D2742B19A4093F00CEBF28 /* WavObject.h */,
-				98D2742C19A4093F00CEBF28 /* World.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		98D2742D19A4093F00CEBF28 /* InputData */ = {
-			isa = PBXGroup;
-			children = (
-				980CD64C19A6F496008944E2 /* Waterfall.wav */,
-				98D2745E19A4156200CEBF28 /* dripping.wav */,
-				98D2745F19A4156200CEBF28 /* footsteps.wav */,
-				98D2742E19A4093F00CEBF28 /* 1minutetest.wav */,
-				98D2742F19A4093F00CEBF28 /* 3m40stest.wav */,
-				98D2743019A4093F00CEBF28 /* catmeow.wav */,
-				98D2743119A4093F00CEBF28 /* input1mono.wav */,
-			);
-			path = InputData;
-			sourceTree = "<group>";
-		};
-		98D2743219A4093F00CEBF28 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				98D2743319A4093F00CEBF28 /* CustomAudioUnit.cpp */,
-				98D2743419A4093F00CEBF28 /* CustomAudioUnit.h */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		98D2743519A4093F00CEBF28 /* MIT_HRTF_Library */ = {
-			isa = PBXGroup;
-			children = (
-				98D2743619A4093F00CEBF28 /* source */,
-			);
-			path = MIT_HRTF_Library;
-			sourceTree = "<group>";
-		};
-		98D2743619A4093F00CEBF28 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				98D2743719A4093F00CEBF28 /* diffuse */,
-				98D2743C19A4093F00CEBF28 /* normal */,
-			);
-			path = source;
-			sourceTree = "<group>";
-		};
-		98D2743719A4093F00CEBF28 /* diffuse */ = {
-			isa = PBXGroup;
-			children = (
-				98D2743819A4093F00CEBF28 /* mit_hrtf_diffuse_44100.h */,
-				98D2743919A4093F00CEBF28 /* mit_hrtf_diffuse_48000.h */,
-				98D2743A19A4093F00CEBF28 /* mit_hrtf_diffuse_88200.h */,
-				98D2743B19A4093F00CEBF28 /* mit_hrtf_diffuse_96000.h */,
-			);
-			path = diffuse;
-			sourceTree = "<group>";
-		};
-		98D2743C19A4093F00CEBF28 /* normal */ = {
-			isa = PBXGroup;
-			children = (
-				98D2743D19A4093F00CEBF28 /* mit_hrtf_normal_44100.h */,
-				98D2743E19A4093F00CEBF28 /* mit_hrtf_normal_48000.h */,
-				98D2743F19A4093F00CEBF28 /* mit_hrtf_normal_88200.h */,
-				98D2744019A4093F00CEBF28 /* mit_hrtf_normal_96000.h */,
-			);
-			path = normal;
-			sourceTree = "<group>";
-		};
-		98D2744319A4093F00CEBF28 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				98D2744419A4093F00CEBF28 /* AudioObj.cpp */,
-				98D2744519A4093F00CEBF28 /* complex.cpp */,
-				98D2744619A4093F00CEBF28 /* fft.cpp */,
-				98D2744719A4093F00CEBF28 /* location.cpp */,
-				98D2744819A4093F00CEBF28 /* mit_hrtf_lib.c */,
-				98D2744919A4093F00CEBF28 /* Mixer3D.cpp */,
-				98D2744A19A4093F00CEBF28 /* Player.cpp */,
-				98D2744B19A4093F00CEBF28 /* velocity.cpp */,
-				98D2744C19A4093F00CEBF28 /* WavObject.mm */,
-				98D2744D19A4093F00CEBF28 /* World.cpp */,
-			);
-			path = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,22 +434,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D2744F19A4093F00CEBF28 /* 3m40stest.wav in Resources */,
-				98D2746019A4156200CEBF28 /* dripping.wav in Resources */,
 				980CD64B19A6F2A0008944E2 /* blueTracker0.png in Resources */,
 				980CD64F19A6F644008944E2 /* ChurchBells.wav in Resources */,
-				98D2744E19A4093F00CEBF28 /* 1minutetest.wav in Resources */,
 				98CDC5AC19899D59006A4911 /* ring-frame-1.jpg in Resources */,
-				98D2746119A4156200CEBF28 /* footsteps.wav in Resources */,
 				5EBEDBB819C8D6EF00579544 /* blueTracker0elevation.png in Resources */,
+				5E27A15019D46F1D00AA1635 /* .gitignore in Resources */,
 				98CDC59319899D06006A4911 /* Main.storyboard in Resources */,
+				5E27A15119D46F1D00AA1635 /* 1minutetest.wav in Resources */,
+				5E27A15219D46F1D00AA1635 /* 3m40stest.wav in Resources */,
+				5E27A15419D46F1D00AA1635 /* input1mono.wav in Resources */,
+				5E27A16319D46F1D00AA1635 /* WORKFLOW.md in Resources */,
+				5E27A14F19D46F1D00AA1635 /* .gitattributes in Resources */,
+				5E27A15619D46F1D00AA1635 /* LICENSE in Resources */,
+				5E27A15719D46F1D00AA1635 /* README.md in Resources */,
 				98CDC5B11989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png in Resources */,
 				98607DE4199EA82100468464 /* AO.png in Resources */,
-				98D2745019A4093F00CEBF28 /* catmeow.wav in Resources */,
 				98CDC59519899D06006A4911 /* Images.xcassets in Resources */,
-				980CD64D19A6F496008944E2 /* Waterfall.wav in Resources */,
-				98D2745119A4093F00CEBF28 /* input1mono.wav in Resources */,
 				98BE200D198C4A37005708AE /* blueTracker.png in Resources */,
+				5E27A15319D46F1D00AA1635 /* catmeow.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,24 +469,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D2745919A4093F00CEBF28 /* Mixer3D.cpp in Sources */,
+				5E27A15919D46F1D00AA1635 /* AudioObj.cpp in Sources */,
+				5E27A15D19D46F1D00AA1635 /* mit_hrtf_lib.c in Sources */,
+				5E27A16219D46F1D00AA1635 /* World.cpp in Sources */,
 				98CDC5AE19899EF0006A4911 /* SteeringWheel.m in Sources */,
-				98D2745D19A4093F00CEBF28 /* World.cpp in Sources */,
 				98CDC59019899D06006A4911 /* ViewController.mm in Sources */,
-				98D2745819A4093F00CEBF28 /* mit_hrtf_lib.c in Sources */,
-				98D2745319A4093F00CEBF28 /* Sonic.cpp in Sources */,
-				98D2745619A4093F00CEBF28 /* fft.cpp in Sources */,
-				98D2745719A4093F00CEBF28 /* location.cpp in Sources */,
-				98D2745219A4093F00CEBF28 /* CustomAudioUnit.cpp in Sources */,
-				5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.m in Sources */,
-				98D2745B19A4093F00CEBF28 /* velocity.cpp in Sources */,
-				98D2745A19A4093F00CEBF28 /* Player.cpp in Sources */,
+				5E27A15E19D46F1D00AA1635 /* Mixer3D.cpp in Sources */,
+				5E27A15519D46F1D00AA1635 /* CustomAudioUnit.cpp in Sources */,
+				5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */,
 				5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */,
-				98D2745519A4093F00CEBF28 /* complex.cpp in Sources */,
+				5E27A15B19D46F1D00AA1635 /* fft.cpp in Sources */,
+				5E27A15A19D46F1D00AA1635 /* complex.cpp in Sources */,
 				98CDC58D19899D06006A4911 /* AppDelegate.m in Sources */,
-				98D2745419A4093F00CEBF28 /* AudioObj.cpp in Sources */,
-				98D2745C19A4093F00CEBF28 /* WavObject.mm in Sources */,
+				5E27A16119D46F1D00AA1635 /* WavObject.mm in Sources */,
+				5E27A15819D46F1D00AA1635 /* Sonic.cpp in Sources */,
+				5E27A16019D46F1D00AA1635 /* velocity.cpp in Sources */,
+				5E27A15C19D46F1D00AA1635 /* location.cpp in Sources */,
 				98CDC58A19899D06006A4911 /* main.m in Sources */,
+				5E27A15F19D46F1D00AA1635 /* Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

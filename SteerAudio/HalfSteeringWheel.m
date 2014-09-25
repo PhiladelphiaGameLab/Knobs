@@ -70,7 +70,7 @@
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     float dx = touchPoint.x - center.x;
     float dy = touchPoint.y - center.y;
-    float ang = atan2(dy,dx);
+    float angle = atan2(dy,dx);
     
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
     // where zero degrees is on the y-axis, not the x-axis

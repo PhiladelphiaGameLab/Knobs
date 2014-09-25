@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RotaryProtocol.h"
-#include "SonicLibrary/Sonic.h"
+#include "Sonic.h"
 #import <CoreMotion/CoreMotion.h>
 #import "SteeringWheel.h"
 #import "HalfSteeringWheel.h"
@@ -29,7 +29,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *pitchLabel;
 @property (weak, nonatomic) IBOutlet UILabel *yawLabel;
-@property (weak, nonatomic) UILabel *valueLabel;
+@property UILabel *valueLabel;
 
 @property (atomic) float azimuth;
 @property (atomic) float elevation;

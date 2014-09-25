@@ -66,6 +66,8 @@
     // Sonic::setPlayerBearing(180/PI*(-az));
 }
 
+CustomAudioUnit* Sonic::cau = nullptr;
+
 /*
 -(void) doGyroUpdate {
     double currentYaw = motionManager.deviceMotion.attitude.yaw;
