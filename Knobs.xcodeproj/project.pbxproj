@@ -114,7 +114,7 @@
 		98607DE3199EA82100468464 /* AO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AO.png; sourceTree = "<group>"; };
 		98BE200C198C4A37005708AE /* blueTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker.png; sourceTree = "<group>"; };
 		98BE200E19917C11005708AE /* RotaryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotaryProtocol.h; sourceTree = "<group>"; };
-		98CDC58419899D06006A4911 /* SteerAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteerAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CDC58419899D06006A4911 /* Knobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CDC58819899D06006A4911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98CDC58919899D06006A4911 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98CDC58B19899D06006A4911 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		98CDC58F19899D06006A4911 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		98CDC59219899D06006A4911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98CDC59419899D06006A4911 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		98CDC59A19899D06006A4911 /* SteerAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteerAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CDC59A19899D06006A4911 /* KnobsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnobsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CDC59F19899D06006A4911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98CDC5A019899D06006A4911 /* SteerAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SteerAudioTests.m; sourceTree = "<group>"; };
 		98CDC5AB19899D59006A4911 /* ring-frame-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ring-frame-1.jpg"; sourceTree = "<group>"; };
@@ -276,8 +276,8 @@
 				98F4FDB119930D43001BB9B6 /* Foundation.framework */,
 				98F4FDAF19930D38001BB9B6 /* AudioToolbox.framework */,
 				5E27A11B19D46F1D00AA1635 /* Sonic */,
-				98CDC58619899D06006A4911 /* SteerAudio */,
-				98CDC59D19899D06006A4911 /* SteerAudioTests */,
+				98CDC58619899D06006A4911 /* Knobs */,
+				98CDC59D19899D06006A4911 /* KnobTests */,
 				98CDC58519899D06006A4911 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -285,13 +285,13 @@
 		98CDC58519899D06006A4911 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98CDC58419899D06006A4911 /* SteerAudio.app */,
-				98CDC59A19899D06006A4911 /* SteerAudioTests.xctest */,
+				98CDC58419899D06006A4911 /* Knobs.app */,
+				98CDC59A19899D06006A4911 /* KnobsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		98CDC58619899D06006A4911 /* SteerAudio */ = {
+		98CDC58619899D06006A4911 /* Knobs */ = {
 			isa = PBXGroup;
 			children = (
 				98CDC5AA19899D3A006A4911 /* Assets */,
@@ -310,6 +310,7 @@
 				98CDC59419899D06006A4911 /* Images.xcassets */,
 				98CDC58719899D06006A4911 /* Supporting Files */,
 			);
+			name = Knobs;
 			path = SteerAudio;
 			sourceTree = "<group>";
 		};
@@ -322,12 +323,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		98CDC59D19899D06006A4911 /* SteerAudioTests */ = {
+		98CDC59D19899D06006A4911 /* KnobTests */ = {
 			isa = PBXGroup;
 			children = (
 				98CDC5A019899D06006A4911 /* SteerAudioTests.m */,
 				98CDC59E19899D06006A4911 /* Supporting Files */,
 			);
+			name = KnobTests;
 			path = SteerAudioTests;
 			sourceTree = "<group>";
 		};
@@ -356,9 +358,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98CDC58319899D06006A4911 /* SteerAudio */ = {
+		98CDC58319899D06006A4911 /* Knobs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98CDC5A419899D06006A4911 /* Build configuration list for PBXNativeTarget "SteerAudio" */;
+			buildConfigurationList = 98CDC5A419899D06006A4911 /* Build configuration list for PBXNativeTarget "Knobs" */;
 			buildPhases = (
 				98CDC58019899D06006A4911 /* Sources */,
 				98CDC58119899D06006A4911 /* Frameworks */,
@@ -368,14 +370,14 @@
 			);
 			dependencies = (
 			);
-			name = SteerAudio;
+			name = Knobs;
 			productName = SteerAudio;
-			productReference = 98CDC58419899D06006A4911 /* SteerAudio.app */;
+			productReference = 98CDC58419899D06006A4911 /* Knobs.app */;
 			productType = "com.apple.product-type.application";
 		};
-		98CDC59919899D06006A4911 /* SteerAudioTests */ = {
+		98CDC59919899D06006A4911 /* KnobsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98CDC5A719899D06006A4911 /* Build configuration list for PBXNativeTarget "SteerAudioTests" */;
+			buildConfigurationList = 98CDC5A719899D06006A4911 /* Build configuration list for PBXNativeTarget "KnobsTests" */;
 			buildPhases = (
 				98CDC59619899D06006A4911 /* Sources */,
 				98CDC59719899D06006A4911 /* Frameworks */,
@@ -386,9 +388,9 @@
 			dependencies = (
 				98CDC59C19899D06006A4911 /* PBXTargetDependency */,
 			);
-			name = SteerAudioTests;
+			name = KnobsTests;
 			productName = SteerAudioTests;
-			productReference = 98CDC59A19899D06006A4911 /* SteerAudioTests.xctest */;
+			productReference = 98CDC59A19899D06006A4911 /* KnobsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -410,7 +412,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 98CDC57F19899D05006A4911 /* Build configuration list for PBXProject "SteerAudio" */;
+			buildConfigurationList = 98CDC57F19899D05006A4911 /* Build configuration list for PBXProject "Knobs" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -423,8 +425,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98CDC58319899D06006A4911 /* SteerAudio */,
-				98CDC59919899D06006A4911 /* SteerAudioTests */,
+				98CDC58319899D06006A4911 /* Knobs */,
+				98CDC59919899D06006A4911 /* KnobsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -503,7 +505,7 @@
 /* Begin PBXTargetDependency section */
 		98CDC59C19899D06006A4911 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98CDC58319899D06006A4911 /* SteerAudio */;
+			target = 98CDC58319899D06006A4911 /* Knobs */;
 			targetProxy = 98CDC59B19899D06006A4911 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -611,7 +613,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_NAME = SteerAudio;
+				PRODUCT_NAME = Knobs;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -627,7 +629,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
-				PRODUCT_NAME = SteerAudio;
+				PRODUCT_NAME = Knobs;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -647,7 +649,7 @@
 				INFOPLIST_FILE = SteerAudioTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KnobsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -663,7 +665,7 @@
 				INFOPLIST_FILE = SteerAudioTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KnobsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -671,7 +673,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98CDC57F19899D05006A4911 /* Build configuration list for PBXProject "SteerAudio" */ = {
+		98CDC57F19899D05006A4911 /* Build configuration list for PBXProject "Knobs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98CDC5A219899D06006A4911 /* Debug */,
@@ -680,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98CDC5A419899D06006A4911 /* Build configuration list for PBXNativeTarget "SteerAudio" */ = {
+		98CDC5A419899D06006A4911 /* Build configuration list for PBXNativeTarget "Knobs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98CDC5A519899D06006A4911 /* Debug */,
@@ -689,7 +691,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98CDC5A719899D06006A4911 /* Build configuration list for PBXNativeTarget "SteerAudioTests" */ = {
+		98CDC5A719899D06006A4911 /* Build configuration list for PBXNativeTarget "KnobsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98CDC5A819899D06006A4911 /* Debug */,
