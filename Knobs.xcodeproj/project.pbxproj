@@ -31,7 +31,6 @@
 		5EBEDBB819C8D6EF00579544 /* blueTracker0elevation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */; };
 		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */; };
 		5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */; };
-		980CD64919A69841008944E2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980CD64819A69841008944E2 /* CoreMotion.framework */; };
 		980CD64B19A6F2A0008944E2 /* blueTracker0.png in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64A19A6F2A0008944E2 /* blueTracker0.png */; };
 		980CD64F19A6F644008944E2 /* ChurchBells.wav in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64E19A6F644008944E2 /* ChurchBells.wav */; };
 		98607DE4199EA82100468464 /* AO.png in Resources */ = {isa = PBXBuildFile; fileRef = 98607DE3199EA82100468464 /* AO.png */; };
@@ -139,7 +138,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980CD64919A69841008944E2 /* CoreMotion.framework in Frameworks */,
 				98F4FDB219930D43001BB9B6 /* Foundation.framework in Frameworks */,
 				98F4FDB019930D39001BB9B6 /* AudioToolbox.framework in Frameworks */,
 			);
