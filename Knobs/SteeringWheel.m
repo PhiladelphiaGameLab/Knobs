@@ -9,13 +9,6 @@
 #import "SteeringWheel.h"
 #import <QuartzCore/QuartzCore.h>
 
-// ratios of label dimensions to self dimensions
-#define LABEL_WIDTH_RATIO 0.5
-#define LABEL_HEIGHT_RATIO 0.2
-
-// distance in px of each text box from center of wheel
-#define TEXT_MARGIN 0
-
 @interface SteeringWheel()
 - (void)drawWheel;
 @end
@@ -41,7 +34,7 @@
     //container = [[UIView alloc] initWithFrame:self.frame];
     
     self.bg = [[UIImageView alloc] initWithFrame:self.frame];
-    self.bg.image = [UIImage imageNamed:@"blueTracker0.png"];
+    self.bg.image = [UIImage imageNamed:@"blueTracker.png"];
     [self addSubview:self.bg];
     
     float myWidth = self.bounds.size.width;
@@ -71,7 +64,8 @@
     [self addSubview:self.valueLabel];
     
     // rotate wheel to starting position
-    self.bg.transform = CGAffineTransformRotate(self.bg.transform, self.zeroPosition);
+    self.bg.transform = CGAffineTransformRotate(self.bg.transform, -DEGREES_TO_RADIANS(self.zeroPosition));
+    NSLog(@"%f", -DEGREES_TO_RADIANS(self.zeroPosition));
     
     //container.userInteractionEnabled = NO;
     //[self addSubview:container];
@@ -119,8 +113,7 @@
     self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
-    // where zero degrees is on the y-axis, not the x-axis
-    currentAngle = RADIANS_TO_DEGREES(angle) + 90;
+    currentAngle = RADIANS_TO_DEGREES(angle) - self.zeroPosition;
 
     if (currentAngle > 180) {
         while (currentAngle > 180) {
@@ -156,7 +149,7 @@
    
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
     // where zero degrees is on the y-axis, not the x-axis
-    currentAngle = RADIANS_TO_DEGREES(angle) + 90;
+    currentAngle = RADIANS_TO_DEGREES(angle) - self.zeroPosition;
     if (currentAngle > 180) {
         while (currentAngle > 180) {
             currentAngle -=360;

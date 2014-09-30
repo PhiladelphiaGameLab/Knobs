@@ -36,11 +36,11 @@
     Sonic::setPlayerBearing(0.0);
     audioObj1 = Sonic::addAudioObject("input1mono.wav", 0, 1, 0);
     
-    azimuthWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"YAW" ZeroPosition:M_PI/2.0 Delegate:self];
+    azimuthWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"YAW" ZeroPosition:90 Delegate:self];
     azimuthWheel.center = CGPointMake(160, 130);
     [self.view addSubview:azimuthWheel];
     
-    elevationWheel = [[HalfSteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"PITCH" ZeroPosition:0.0 Delegate:self];
+    elevationWheel = [[HalfSteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"PITCH" ZeroPosition:0 Delegate:self];
     elevationWheel.center = CGPointMake(160, 350);
     [self.view addSubview:elevationWheel];
 

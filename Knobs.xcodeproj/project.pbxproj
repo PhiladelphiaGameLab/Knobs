@@ -28,13 +28,11 @@
 		5E27A16119D46F1D00AA1635 /* WavObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14C19D46F1D00AA1635 /* WavObject.mm */; };
 		5E27A16219D46F1D00AA1635 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14D19D46F1D00AA1635 /* World.cpp */; };
 		5E27A16319D46F1D00AA1635 /* WORKFLOW.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A14E19D46F1D00AA1635 /* WORKFLOW.md */; };
-		5EBEDBB819C8D6EF00579544 /* blueTracker0elevation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */; };
+		5EBEDBB819C8D6EF00579544 /* blueTracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker.png */; };
 		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */; };
 		5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */; };
-		980CD64B19A6F2A0008944E2 /* blueTracker0.png in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64A19A6F2A0008944E2 /* blueTracker0.png */; };
 		980CD64F19A6F644008944E2 /* ChurchBells.wav in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64E19A6F644008944E2 /* ChurchBells.wav */; };
 		98607DE4199EA82100468464 /* AO.png in Resources */ = {isa = PBXBuildFile; fileRef = 98607DE3199EA82100468464 /* AO.png */; };
-		98BE200D198C4A37005708AE /* blueTracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE200C198C4A37005708AE /* blueTracker.png */; };
 		98CDC58A19899D06006A4911 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC58919899D06006A4911 /* main.m */; };
 		98CDC58D19899D06006A4911 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC58C19899D06006A4911 /* AppDelegate.m */; };
 		98CDC59019899D06006A4911 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC58F19899D06006A4911 /* ViewController.mm */; };
@@ -102,16 +100,14 @@
 		5E27A14C19D46F1D00AA1635 /* WavObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavObject.mm; sourceTree = "<group>"; };
 		5E27A14D19D46F1D00AA1635 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
 		5E27A14E19D46F1D00AA1635 /* WORKFLOW.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WORKFLOW.md; sourceTree = "<group>"; };
-		5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker0elevation.png; sourceTree = "<group>"; };
+		5EBEDBB719C8D6EF00579544 /* blueTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker.png; sourceTree = "<group>"; };
 		5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringWheelViewController.h; sourceTree = "<group>"; };
 		5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SteeringWheelViewController.mm; sourceTree = "<group>"; };
 		5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfSteeringWheel.h; sourceTree = "<group>"; };
 		5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfSteeringWheel.m; sourceTree = "<group>"; };
 		980CD64819A69841008944E2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		980CD64A19A6F2A0008944E2 /* blueTracker0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker0.png; sourceTree = "<group>"; };
 		980CD64E19A6F644008944E2 /* ChurchBells.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ChurchBells.wav; sourceTree = "<group>"; };
 		98607DE3199EA82100468464 /* AO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AO.png; sourceTree = "<group>"; };
-		98BE200C198C4A37005708AE /* blueTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker.png; sourceTree = "<group>"; };
 		98BE200E19917C11005708AE /* RotaryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotaryProtocol.h; sourceTree = "<group>"; };
 		98CDC58419899D06006A4911 /* Knobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CDC58819899D06006A4911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -341,11 +337,9 @@
 		98CDC5AA19899D3A006A4911 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				5EBEDBB719C8D6EF00579544 /* blueTracker0elevation.png */,
+				5EBEDBB719C8D6EF00579544 /* blueTracker.png */,
 				980CD64E19A6F644008944E2 /* ChurchBells.wav */,
-				980CD64A19A6F2A0008944E2 /* blueTracker0.png */,
 				98607DE3199EA82100468464 /* AO.png */,
-				98BE200C198C4A37005708AE /* blueTracker.png */,
 				98CDC5B01989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png */,
 				98CDC5AB19899D59006A4911 /* ring-frame-1.jpg */,
 			);
@@ -433,10 +427,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980CD64B19A6F2A0008944E2 /* blueTracker0.png in Resources */,
 				980CD64F19A6F644008944E2 /* ChurchBells.wav in Resources */,
 				98CDC5AC19899D59006A4911 /* ring-frame-1.jpg in Resources */,
-				5EBEDBB819C8D6EF00579544 /* blueTracker0elevation.png in Resources */,
+				5EBEDBB819C8D6EF00579544 /* blueTracker.png in Resources */,
 				5E27A15019D46F1D00AA1635 /* .gitignore in Resources */,
 				98CDC59319899D06006A4911 /* Main.storyboard in Resources */,
 				5E27A15119D46F1D00AA1635 /* 1minutetest.wav in Resources */,
@@ -449,7 +442,6 @@
 				98CDC5B11989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png in Resources */,
 				98607DE4199EA82100468464 /* AO.png in Resources */,
 				98CDC59519899D06006A4911 /* Images.xcassets in Resources */,
-				98BE200D198C4A37005708AE /* blueTracker.png in Resources */,
 				5E27A15319D46F1D00AA1635 /* catmeow.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

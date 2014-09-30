@@ -11,6 +11,15 @@
 
 #define RADIANS_TO_DEGREES(radians) ((radians) * (180.0 / M_PI))
 
+#define DEGREES_TO_RADIANS(deg) (deg * (M_PI / 180.0))
+
+// ratios of label dimensions to self dimensions
+#define LABEL_WIDTH_RATIO 0.5
+#define LABEL_HEIGHT_RATIO 0.2
+
+// distance in px of each text box from center of wheel
+#define TEXT_MARGIN 0
+
 @interface SteeringWheel : UIControl
 
 @property (weak) id <RotaryProtocol> delegate;
