@@ -13,6 +13,9 @@
 #define LABEL_WIDTH_RATIO 0.5
 #define LABEL_HEIGHT_RATIO 0.2
 
+// distance in px of each text box from center of wheel
+#define TEXT_MARGIN 0
+
 @interface SteeringWheel()
 - (void)drawWheel;
 @end
@@ -47,23 +50,22 @@
     
     // Draw text label
     float textRectOriginX = myCenter.x - (LABEL_WIDTH_RATIO/2.0)*myWidth;
-    float textRectOriginY = myCenter.y - (LABEL_HEIGHT_RATIO/2.0)*myWidth;
+    float textRectOriginY = myCenter.y - (LABEL_HEIGHT_RATIO*myWidth) - TEXT_MARGIN;
     
     CGRect textRect = CGRectMake(textRectOriginX, textRectOriginY, LABEL_WIDTH_RATIO*myWidth, LABEL_HEIGHT_RATIO*myHeight);
     
     UILabel *textLabel = [[UILabel alloc] initWithFrame:textRect];
     textLabel.text = text;
-    // TODO: center text in labelRect?
+    textLabel.textAlignment = NSTextAlignmentCenter;
     
     // Draw value label
-    float valueRectOriginX = myCenter.x - (LABEL_WIDTH_RATIO/2.0)*myWidth;
-    float valueRectOriginY = myCenter.y + (LABEL_HEIGHT_RATIO/2.0)*myWidth;
+    float valueRectOriginY = myCenter.y + TEXT_MARGIN;
     
-    CGRect valueRect = CGRectMake(valueRectOriginX, valueRectOriginY, LABEL_WIDTH_RATIO*myWidth, LABEL_HEIGHT_RATIO*myHeight);
+    CGRect valueRect = CGRectMake(textRectOriginX, valueRectOriginY, LABEL_WIDTH_RATIO*myWidth, LABEL_HEIGHT_RATIO*myHeight);
     
     self.valueLabel = [[UILabel alloc] initWithFrame:valueRect];
     self.valueLabel.text = @"0.0";
-    // TODO: center text in labelRect?
+    self.valueLabel.textAlignment = NSTextAlignmentCenter;
 
     [self addSubview:textLabel];
     [self addSubview:self.valueLabel];
@@ -165,7 +167,7 @@
         }
     }
     
-    self.valueLabel.text = [NSString stringWithFormat:@"%f", currentAngle];
+    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
     previousAngle = currentAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
 }
