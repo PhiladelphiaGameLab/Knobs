@@ -22,15 +22,13 @@
     [super viewDidLoad];
     
     
-    valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 525, 120, 30)];
-    valueLabel.textAlignment = NSTextAlignmentCenter;
-    valueLabel.textColor = [UIColor lightGrayColor];
-    //valueLabel.backgroundColor = [UIColor lightGrayColor];
-    valueLabel.text = @"FROM SONIC";
-    [self.view addSubview:valueLabel];
+//    valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 525, 120, 30)];
+//    valueLabel.textAlignment = NSTextAlignmentCenter;
+//    valueLabel.textColor = [UIColor lightGrayColor];
+//    //valueLabel.backgroundColor = [UIColor lightGrayColor];
+//    valueLabel.text = @"FROM SONIC";
+//    [self.view addSubview:valueLabel];
     
-    motionManager = [[CMMotionManager alloc] init];
-    [motionManager startDeviceMotionUpdates];
     // timer = [NSTimer scheduledTimerWithTimeInterval:1/25.0 target:self selector:@selector(doGyroUpdate) userInfo:nil repeats:YES];
     
     self.azimuth = 0;
@@ -67,13 +65,6 @@
 }
 
 CustomAudioUnit* Sonic::cau = nullptr;
-
-/*
--(void) doGyroUpdate {
-    double currentYaw = motionManager.deviceMotion.attitude.yaw;
-    [azimuthWheel turnWheel:currentYaw];
-}
-*/
 
 
 @end

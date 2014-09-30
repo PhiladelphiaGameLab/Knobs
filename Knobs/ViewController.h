@@ -20,7 +20,6 @@
 @interface ViewController : UIViewController<RotaryProtocol>{
     
     // TODO: Delete some of these?
-    CMMotionManager *motionManager;
     NSTimer *timer;
     double originalYaw;
     SteeringWheel *azimuthWheel;
