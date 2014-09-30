@@ -2,7 +2,7 @@
 //  main.m
 //  SteerAudio
 //
-//  Created by Philadelphia Game Lab on 7/30/14.
+//  Created by Alex Cannon on 9/18/14.
 //  Copyright (c) 2014 Philadelphia Game Lab. All rights reserved.
 //
 
