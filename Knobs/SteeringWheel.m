@@ -15,23 +15,21 @@
 
 @implementation SteeringWheel
 
-@synthesize delegate, /* container,*/ startTransform, currentAngle, previousAngle;
+@synthesize delegate, /* container,*/ startTransform, currentAngleRads, previousAngleRads;
 
 - (id)initWithFrame:(CGRect)frame Label:(NSString*)text ZeroPosition:(float)zeroPos Delegate:(id)del {
     
     if ((self = [super initWithFrame:frame])) {
         self.zeroPosition = zeroPos; // TODO: have this default to zero
         self.delegate = del;
-        self.previousAngle = 0;
-        self.currentAngle = 0;
+        self.previousAngleRads = 0;
+        self.currentAngleRads = 0;
         [self drawWheelWithLabel:text];
     }
     return self;
 }
 
 - (void) drawWheelWithLabel:(NSString*)text {
-    
-    //container = [[UIView alloc] initWithFrame:self.frame];
     
     self.bg = [[UIImageView alloc] initWithFrame:self.frame];
     self.bg.image = [UIImage imageNamed:@"blueTracker.png"];
@@ -44,7 +42,6 @@
     // Draw text label
     float textRectOriginX = myCenter.x - (LABEL_WIDTH_RATIO/2.0)*myWidth;
     float textRectOriginY = myCenter.y - (LABEL_HEIGHT_RATIO*myWidth) - TEXT_MARGIN;
-    
     CGRect textRect = CGRectMake(textRectOriginX, textRectOriginY, LABEL_WIDTH_RATIO*myWidth, LABEL_HEIGHT_RATIO*myHeight);
     
     UILabel *textLabel = [[UILabel alloc] initWithFrame:textRect];
@@ -70,7 +67,7 @@
     //container.userInteractionEnabled = NO;
     //[self addSubview:container];
     startTransform = self.bg.transform;
-    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
+    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngleRads)] :currentAngleRads];
 }
 
 - (void)turnWheel:(double)angle {
@@ -94,7 +91,7 @@
     }
     
     startTransform = self.bg.transform;
-    previousAngle = atan2(dy,dx);
+    previousAngleRads = atan2(dy,dx);
     
     return YES;
 }
@@ -109,25 +106,25 @@
     float angle = atan2(dy,dx);
     
     // rotate wheel by the difference between the current and previous angles
-    float angleDifference = previousAngle - angle;
+    float angleDifference = previousAngleRads - angle;
     self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
-    currentAngle = RADIANS_TO_DEGREES(angle) - self.zeroPosition;
+    currentAngleRads = RADIANS_TO_DEGREES(angle) - self.zeroPosition;
 
-    if (currentAngle > 180) {
-        while (currentAngle > 180) {
-            currentAngle -=360;
+    if (currentAngleRads > 180) {
+        while (currentAngleRads > 180) {
+            currentAngleRads -=360;
         }
-    } else if (currentAngle <= -180){
-        while (currentAngle <= -180) {
-            currentAngle +=360;
+    } else if (currentAngleRads <= -180){
+        while (currentAngleRads <= -180) {
+            currentAngleRads +=360;
         }
     }
     
-    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
+    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngleRads];
 
-    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
+    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngleRads)] :currentAngleRads];
     
     return YES;
 }
@@ -143,26 +140,26 @@
     float angle = atan2(dy,dx);
     
     // rotate wheel by the difference between the current and previous angles
-    NSLog(@"Previous Angle: %f", previousAngle);
-    float angleDifference = previousAngle - angle;
+    NSLog(@"Previous Angle: %f", previousAngleRads);
+    float angleDifference = previousAngleRads - angle;
     self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
    
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
     // where zero degrees is on the y-axis, not the x-axis
-    currentAngle = RADIANS_TO_DEGREES(angle) - self.zeroPosition;
-    if (currentAngle > 180) {
-        while (currentAngle > 180) {
-            currentAngle -=360;
+    currentAngleRads = RADIANS_TO_DEGREES(angle) - self.zeroPosition;
+    if (currentAngleRads > 180) {
+        while (currentAngleRads > 180) {
+            currentAngleRads -=360;
         }
-    } else if (currentAngle <= -180) {
-        while (currentAngle <= -180) {
-            currentAngle +=360;
+    } else if (currentAngleRads <= -180) {
+        while (currentAngleRads <= -180) {
+            currentAngleRads +=360;
         }
     }
     
-    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
-    previousAngle = currentAngle;
-    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
+    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngleRads];
+    previousAngleRads = currentAngleRads;
+    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngleRads)] :currentAngleRads];
 }
 
 
