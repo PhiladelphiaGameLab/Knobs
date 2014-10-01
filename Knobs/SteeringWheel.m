@@ -109,9 +109,12 @@
     
     // rotate wheel by the difference between the current and previous angles
     float angleDifference = previousTouchAngle - currentTouchAngle;
+    NSLog(@"currentTouchAngle: %.2f", currentTouchAngle);
+    NSLog(@"previousTouchAngle: %.2f", previousTouchAngle);
+    NSLog(@"angleDifference: %.2f", angleDifference);
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
     
-    // convert angle to degrees and scale to range needed by the MIT HRTF library,
+    // convert angle to degrees and scale to range needed by the MIT HRTF library
     currentAngle += angleDifference;
 
     if (currentAngle > 180) {
@@ -126,6 +129,9 @@
     
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
 
+    previousTouchAngle = currentTouchAngle; // why does this break things?
+    startTransform = self.bg.transform;
+    
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
     
     return YES;
@@ -143,6 +149,7 @@
     
     // rotate wheel by the difference between the current and previous angles
     float angleDifference = previousTouchAngle - currentTouchAngle;
+    NSLog(@"currentTouchAngle: %.2f", currentTouchAngle);
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
    
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
