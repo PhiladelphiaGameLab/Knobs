@@ -44,7 +44,7 @@
     elevationWheel.center = CGPointMake(160, 350);
     [self.view addSubview:elevationWheel];
 
-    Sonic::startPlaying();
+    //Sonic::startPlaying();
     
     // Do any additional setup after loading the view, typically from a nib
 }

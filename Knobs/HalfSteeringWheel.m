@@ -19,14 +19,14 @@
 
 @implementation HalfSteeringWheel
 
-@synthesize delegate, /* container,*/ startTransform, currentAngle, previousAngle;
+@synthesize delegate, /* container,*/ startTransform, currentAngle, previousTouchAngle;
 
 - (id)initWithFrame:(CGRect)frame Label:(NSString*)text ZeroPosition:(float)zeroPos Delegate:(id)del {
     
     if ((self = [super initWithFrame:frame])) {
         self.zeroPosition = zeroPos; // TODO: have this default to zero
         self.delegate = del;
-        self.previousAngle = 0;
+        self.previousTouchAngle = 0;
         self.currentAngle = 0;
         [self drawWheelWithLabel:text];
     }
@@ -99,7 +99,7 @@
     }
     
     startTransform = self.bg.transform;
-    previousAngle = atan2(dy,dx);
+    previousTouchAngle = atan2(dy,dx);
     
     return YES;
 }
@@ -125,7 +125,7 @@
     }
     
     // rotate wheel by the difference between the current and previous angles
-    float angleDifference = previousAngle - angle;
+    float angleDifference = previousTouchAngle - angle;
     self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
@@ -156,13 +156,13 @@
         currentAngle = 90;
     }
     
-    float angleDifference = previousAngle - angle;
+    float angleDifference = previousTouchAngle - angle;
     self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
     
-    NSLog(@"Previous Angle: %f", previousAngle);
+    NSLog(@"Previous Angle: %f", previousTouchAngle);
     
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
-    previousAngle = currentAngle;
+    previousTouchAngle = currentAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
 }
 

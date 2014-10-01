@@ -25,7 +25,7 @@
 @property (weak) id <RotaryProtocol> delegate;
 //@property (nonatomic, strong) UIView *container;
 @property CGAffineTransform startTransform;
-@property float currentAngle, previousAngle;
+@property float currentAngle, previousTouchAngle;
 @property UIImageView *bg;
 @property float zeroPosition;   // Position in degrees along the standard
                                 // unit circle to be designated as "zero degrees".

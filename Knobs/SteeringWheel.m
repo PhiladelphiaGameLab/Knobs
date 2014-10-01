@@ -15,14 +15,14 @@
 
 @implementation SteeringWheel
 
-@synthesize delegate, /* container,*/ startTransform, currentAngle, previousAngle;
+@synthesize delegate, /* container,*/ startTransform, currentAngle, previousTouchAngle;
 
 - (id)initWithFrame:(CGRect)frame Label:(NSString*)text ZeroPosition:(float)zeroPos Delegate:(id)del {
     
     if ((self = [super initWithFrame:frame])) {
         self.zeroPosition = zeroPos; // TODO: have this default to zero
         self.delegate = del;
-        self.previousAngle = 0;
+        self.previousTouchAngle = 0;
         self.currentAngle = 0;
         [self drawWheelWithLabel:text];
     }
@@ -94,7 +94,7 @@
     }
     
     startTransform = self.bg.transform;
-    previousAngle = atan2(dy,dx);
+    previousTouchAngle = RADIANS_TO_DEGREES(atan2(dy,dx));
     
     return YES;
 }
@@ -106,14 +106,14 @@
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     float dx = touchPoint.x - center.x;
     float dy = touchPoint.y - center.y;
-    float angle = atan2(dy,dx);
+    float currentTouchAngle = RADIANS_TO_DEGREES(atan2(dy,dx));
     
     // rotate wheel by the difference between the current and previous angles
-    float angleDifference = previousAngle - angle;
-    self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
+    float angleDifference = previousTouchAngle - currentTouchAngle;
+    self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
     
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
-    currentAngle = RADIANS_TO_DEGREES(angle) - self.zeroPosition;
+    currentAngle += angleDifference;
 
     if (currentAngle > 180) {
         while (currentAngle > 180) {
@@ -140,16 +140,16 @@
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
     float dx = touchPoint.x - center.x;
     float dy = touchPoint.y - center.y;
-    float angle = atan2(dy,dx);
+    float currentTouchAngle = RADIANS_TO_DEGREES(atan2(dy,dx));
     
     // rotate wheel by the difference between the current and previous angles
-    NSLog(@"Previous Angle: %f", previousAngle);
-    float angleDifference = previousAngle - angle;
-    self.bg.transform = CGAffineTransformRotate(startTransform, -angleDifference);
+    NSLog(@"Previous Angle: %f", previousTouchAngle);
+    float angleDifference = previousTouchAngle - currentTouchAngle;
+    self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
    
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
     // where zero degrees is on the y-axis, not the x-axis
-    currentAngle = RADIANS_TO_DEGREES(angle) - self.zeroPosition;
+    currentAngle += angleDifference;
     if (currentAngle > 180) {
         while (currentAngle > 180) {
             currentAngle -=360;
@@ -161,7 +161,7 @@
     }
     
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
-    previousAngle = currentAngle;
+    previousTouchAngle = currentAngle;
     [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
 }
 
