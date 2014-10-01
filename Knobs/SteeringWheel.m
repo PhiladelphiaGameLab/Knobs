@@ -65,7 +65,6 @@
     
     // rotate wheel to starting position
     self.bg.transform = CGAffineTransformRotate(self.bg.transform, -DEGREES_TO_RADIANS(self.zeroPosition));
-    NSLog(@"%f", -DEGREES_TO_RADIANS(self.zeroPosition));
     
     //container.userInteractionEnabled = NO;
     //[self addSubview:container];
@@ -143,7 +142,6 @@
     float currentTouchAngle = RADIANS_TO_DEGREES(atan2(dy,dx));
     
     // rotate wheel by the difference between the current and previous angles
-    NSLog(@"Previous Angle: %f", previousTouchAngle);
     float angleDifference = previousTouchAngle - currentTouchAngle;
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
    

@@ -58,10 +58,7 @@
     self.azimuth = az;
     self.valueLabel.text = [NSString stringWithFormat:@"%f", RADIANS_TO_DEGREES(azimuth)];
     audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.azimuth)), 0);
-    NSLog(@"angle: %f", self.azimuth);
-   Location loc = audioObj1->getLocation();
-    NSLog(@"location: %f, %f", loc.getX(), loc.getY());
-    // Sonic::setPlayerBearing(180/PI*(-az));
+        // Sonic::setPlayerBearing(180/PI*(-az));
 }
 
 CustomAudioUnit* Sonic::cau = nullptr;
