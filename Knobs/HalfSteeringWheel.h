@@ -10,4 +10,7 @@
 
 @interface HalfSteeringWheel : SteeringWheel
 
+// needed to calculate how far to rotate to 90 or -90 degrees but not past
+@property float previousAngle;
+
 @end
