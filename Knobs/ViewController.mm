@@ -44,7 +44,7 @@
     elevationWheel.center = CGPointMake(160, 350);
     [self.view addSubview:elevationWheel];
 
-    //Sonic::startPlaying();
+    Sonic::startPlaying();
     
     // Do any additional setup after loading the view, typically from a nib
 }
@@ -54,11 +54,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) wheelDidChangeValue:(NSString *)newValue  :(float)az{
-    self.azimuth = az;
-    self.valueLabel.text = [NSString stringWithFormat:@"%f", RADIANS_TO_DEGREES(azimuth)];
-    audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.azimuth)), 0);
-        // Sonic::setPlayerBearing(180/PI*(-az));
+- (void) wheelWithName:(NSString *)wheelName didChangeAngleTo:(float)angle
+{
+    if ([wheelName isEqualToString:@"azimuth"]) {
+        self.azimuth = angle;
+        // TODO: Implement object location setting via polar coords?
+        audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.azimuth)), sinf(DEGREES_TO_RADIANS(self.elevation)));
+    } else if ([wheelName isEqualToString:@"elevation"]) {
+        self.elevation = angle;
+        audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.azimuth)), sinf(DEGREES_TO_RADIANS(self.elevation)));
+    } else {
+        NSLog(@"Invalid wheelname for wheelDidChangeValue: %@", wheelName);
+    }
 }
 
 CustomAudioUnit* Sonic::cau = nullptr;

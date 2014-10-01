@@ -10,6 +10,6 @@
 
 @protocol RotaryProtocol <NSObject>
 
-- (void) wheelDidChangeValue:(NSString *)newValue :(float)az;
+- (void) wheelWithName:(NSString *)wheelName didChangeAngleTo:(float)angle;
 
 @end

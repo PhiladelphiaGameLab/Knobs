@@ -82,7 +82,7 @@
     previousTouchAngle = currentTouchAngle; // why does this break things?
     startTransform = self.bg.transform;
     
-    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
+    [self.delegate wheelWithName:@"elevation" didChangeAngleTo:currentAngle];
     
     return YES;
 }
@@ -125,7 +125,7 @@
     
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
     previousTouchAngle = currentAngle;
-    [self.delegate wheelDidChangeValue: [NSString stringWithFormat:@"%i", ((int)currentAngle)] :currentAngle];
+    [self.delegate wheelWithName:@"elevation" didChangeAngleTo:currentAngle];
 }
 
 @end

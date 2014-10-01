@@ -29,6 +29,7 @@
 @property UIImageView *bg;
 @property float zeroPosition;   // Position in degrees along the standard
                                 // unit circle to be designated as "zero degrees".
+@property NSString *name;
 
 @property UILabel *valueLabel;
 
