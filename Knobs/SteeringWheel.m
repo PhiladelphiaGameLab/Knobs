@@ -127,12 +127,14 @@
         }
     }
     
-    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
+    //currentAngle = -currentAngle; // counterclockwise yaw is negative for MIT lib
+    
+    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", -currentAngle];
 
-    previousTouchAngle = currentTouchAngle; // why does this break things?
+    previousTouchAngle = currentTouchAngle;
     startTransform = self.bg.transform;
     
-    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:currentAngle];
+    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:-currentAngle];
     
     return YES;
 }
@@ -140,6 +142,7 @@
 
 - (void)endTrackingWithTouch:(UITouch*)touch withEvent:(UIEvent*)event
 {
+    // TODO: refactor code to avoid repeating all this in multiple functions?
     // calculate new angle
     CGPoint touchPoint = [touch locationInView:self];
     CGPoint center = CGPointMake(self.bounds.size.width/2.0f, self.bounds.size.height/2.0f);
@@ -165,9 +168,11 @@
         }
     }
     
-    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
+    //currentAngle = -currentAngle;
+    
+    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", -currentAngle];
     previousTouchAngle = currentAngle;
-    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:currentAngle];
+    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:-currentAngle];
 }
 
 
