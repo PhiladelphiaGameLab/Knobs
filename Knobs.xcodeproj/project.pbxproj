@@ -27,7 +27,7 @@
 		5E27A16019D46F1D00AA1635 /* velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14B19D46F1D00AA1635 /* velocity.cpp */; };
 		5E27A16119D46F1D00AA1635 /* WavObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14C19D46F1D00AA1635 /* WavObject.mm */; };
 		5E27A16219D46F1D00AA1635 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14D19D46F1D00AA1635 /* World.cpp */; };
-		5E27A16319D46F1D00AA1635 /* WORKFLOW.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A14E19D46F1D00AA1635 /* WORKFLOW.md */; };
+		5E9CD26219DDB14400758A88 /* beebuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E9CD26119DDB14400758A88 /* beebuzz.wav */; };
 		5EBEDBB819C8D6EF00579544 /* blueTracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker.png */; };
 		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */; };
 		5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */; };
@@ -99,7 +99,7 @@
 		5E27A14B19D46F1D00AA1635 /* velocity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = velocity.cpp; sourceTree = "<group>"; };
 		5E27A14C19D46F1D00AA1635 /* WavObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavObject.mm; sourceTree = "<group>"; };
 		5E27A14D19D46F1D00AA1635 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
-		5E27A14E19D46F1D00AA1635 /* WORKFLOW.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WORKFLOW.md; sourceTree = "<group>"; };
+		5E9CD26119DDB14400758A88 /* beebuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = beebuzz.wav; path = Sonic/InputData/beebuzz.wav; sourceTree = SOURCE_ROOT; };
 		5EBEDBB719C8D6EF00579544 /* blueTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker.png; sourceTree = "<group>"; };
 		5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringWheelViewController.h; sourceTree = "<group>"; };
 		5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SteeringWheelViewController.mm; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 				5E27A14119D46F1D00AA1635 /* Sonic.cpp */,
 				5E27A14219D46F1D00AA1635 /* Sonic.h */,
 				5E27A14319D46F1D00AA1635 /* source */,
-				5E27A14E19D46F1D00AA1635 /* WORKFLOW.md */,
 			);
 			path = Sonic;
 			sourceTree = SOURCE_ROOT;
@@ -296,6 +295,7 @@
 				98CDC59119899D06006A4911 /* Main.storyboard */,
 				5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */,
 				5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */,
+				5E9CD26119DDB14400758A88 /* beebuzz.wav */,
 				98CDC5AD19899EF0006A4911 /* SteeringWheel.m */,
 				98CDC5AF19899F0A006A4911 /* SteeringWheel.h */,
 				5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */,
@@ -435,8 +435,8 @@
 				5E27A15119D46F1D00AA1635 /* 1minutetest.wav in Resources */,
 				5E27A15219D46F1D00AA1635 /* 3m40stest.wav in Resources */,
 				5E27A15419D46F1D00AA1635 /* input1mono.wav in Resources */,
-				5E27A16319D46F1D00AA1635 /* WORKFLOW.md in Resources */,
 				5E27A14F19D46F1D00AA1635 /* .gitattributes in Resources */,
+				5E9CD26219DDB14400758A88 /* beebuzz.wav in Resources */,
 				5E27A15619D46F1D00AA1635 /* LICENSE in Resources */,
 				5E27A15719D46F1D00AA1635 /* README.md in Resources */,
 				98CDC5B11989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png in Resources */,
