@@ -59,10 +59,10 @@
     if ([wheelName isEqualToString:@"azimuth"]) {
         self.azimuth = angle;
         // TODO: Implement object location setting via polar coords?
-        audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.azimuth)), sinf(DEGREES_TO_RADIANS(self.elevation)));
+        audioObj1->setLocation(cosf(DEGREES_TO_RADIANS(self.elevation))*sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.elevation))*cosf(DEGREES_TO_RADIANS(self.azimuth)), sinf(DEGREES_TO_RADIANS(self.elevation)));
     } else if ([wheelName isEqualToString:@"elevation"]) {
         self.elevation = angle;
-        audioObj1->setLocation(sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.azimuth)), sinf(DEGREES_TO_RADIANS(self.elevation)));
+        audioObj1->setLocation(cosf(DEGREES_TO_RADIANS(self.elevation))*sinf(DEGREES_TO_RADIANS(self.azimuth)), cosf(DEGREES_TO_RADIANS(self.elevation))*cosf(DEGREES_TO_RADIANS(self.azimuth)), sinf(DEGREES_TO_RADIANS(self.elevation)));
     } else {
         NSLog(@"Invalid wheelname for wheelDidChangeValue: %@", wheelName);
     }
