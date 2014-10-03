@@ -34,7 +34,7 @@
     self.azimuth = 0;
     Sonic::createWorld();
     Sonic::setPlayerBearing(0.0);
-    audioObj1 = Sonic::addAudioObject("beebuzz.wav", 0, 1, 0);
+    audioObj1 = Sonic::addAudioObject("16-44100-pianoriff.wav", 0, 1, 0);
     
     azimuthWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"YAW" ZeroPosition:90 Delegate:self];
     azimuthWheel.center = CGPointMake(160, 130);
