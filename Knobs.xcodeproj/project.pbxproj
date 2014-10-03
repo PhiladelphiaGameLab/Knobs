@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		5E27A14F19D46F1D00AA1635 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A11C19D46F1D00AA1635 /* .gitattributes */; };
 		5E27A15019D46F1D00AA1635 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A11D19D46F1D00AA1635 /* .gitignore */; };
-		5E27A15119D46F1D00AA1635 /* 1minutetest.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A12C19D46F1D00AA1635 /* 1minutetest.wav */; };
-		5E27A15219D46F1D00AA1635 /* 3m40stest.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A12D19D46F1D00AA1635 /* 3m40stest.wav */; };
-		5E27A15319D46F1D00AA1635 /* catmeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A12E19D46F1D00AA1635 /* catmeow.wav */; };
-		5E27A15419D46F1D00AA1635 /* input1mono.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A12F19D46F1D00AA1635 /* input1mono.wav */; };
 		5E27A15519D46F1D00AA1635 /* CustomAudioUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A13119D46F1D00AA1635 /* CustomAudioUnit.cpp */; };
 		5E27A15619D46F1D00AA1635 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A13319D46F1D00AA1635 /* LICENSE */; };
 		5E27A15719D46F1D00AA1635 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E27A14019D46F1D00AA1635 /* README.md */; };
@@ -27,10 +23,14 @@
 		5E27A16019D46F1D00AA1635 /* velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14B19D46F1D00AA1635 /* velocity.cpp */; };
 		5E27A16119D46F1D00AA1635 /* WavObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14C19D46F1D00AA1635 /* WavObject.mm */; };
 		5E27A16219D46F1D00AA1635 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14D19D46F1D00AA1635 /* World.cpp */; };
-		5E9CD26219DDB14400758A88 /* beebuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E9CD26119DDB14400758A88 /* beebuzz.wav */; };
 		5EBEDBB819C8D6EF00579544 /* blueTracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker.png */; };
 		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */; };
 		5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */; };
+		5EEFBD2819DF182400E82D87 /* 16-44100-beebuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EEFBD2319DF182400E82D87 /* 16-44100-beebuzz.wav */; };
+		5EEFBD2919DF182400E82D87 /* 16-44100-pianoriff.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EEFBD2419DF182400E82D87 /* 16-44100-pianoriff.wav */; };
+		5EEFBD2A19DF182400E82D87 /* 16-44100-pianosong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EEFBD2519DF182400E82D87 /* 16-44100-pianosong.wav */; };
+		5EEFBD2B19DF182400E82D87 /* 16-44100-rockjam.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EEFBD2619DF182400E82D87 /* 16-44100-rockjam.wav */; };
+		5EEFBD2C19DF182400E82D87 /* 8-11025-catmeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EEFBD2719DF182400E82D87 /* 8-11025-catmeow.wav */; };
 		980CD64F19A6F644008944E2 /* ChurchBells.wav in Resources */ = {isa = PBXBuildFile; fileRef = 980CD64E19A6F644008944E2 /* ChurchBells.wav */; };
 		98607DE4199EA82100468464 /* AO.png in Resources */ = {isa = PBXBuildFile; fileRef = 98607DE3199EA82100468464 /* AO.png */; };
 		98CDC58A19899D06006A4911 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CDC58919899D06006A4911 /* main.m */; };
@@ -71,10 +71,6 @@
 		5E27A12819D46F1D00AA1635 /* velocity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = velocity.h; sourceTree = "<group>"; };
 		5E27A12919D46F1D00AA1635 /* WavObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WavObject.h; sourceTree = "<group>"; };
 		5E27A12A19D46F1D00AA1635 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
-		5E27A12C19D46F1D00AA1635 /* 1minutetest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1minutetest.wav; sourceTree = "<group>"; };
-		5E27A12D19D46F1D00AA1635 /* 3m40stest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3m40stest.wav; sourceTree = "<group>"; };
-		5E27A12E19D46F1D00AA1635 /* catmeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catmeow.wav; sourceTree = "<group>"; };
-		5E27A12F19D46F1D00AA1635 /* input1mono.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = input1mono.wav; sourceTree = "<group>"; };
 		5E27A13119D46F1D00AA1635 /* CustomAudioUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomAudioUnit.cpp; sourceTree = "<group>"; };
 		5E27A13219D46F1D00AA1635 /* CustomAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAudioUnit.h; sourceTree = "<group>"; };
 		5E27A13319D46F1D00AA1635 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -99,12 +95,16 @@
 		5E27A14B19D46F1D00AA1635 /* velocity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = velocity.cpp; sourceTree = "<group>"; };
 		5E27A14C19D46F1D00AA1635 /* WavObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavObject.mm; sourceTree = "<group>"; };
 		5E27A14D19D46F1D00AA1635 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
-		5E9CD26119DDB14400758A88 /* beebuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = beebuzz.wav; path = Sonic/InputData/beebuzz.wav; sourceTree = SOURCE_ROOT; };
 		5EBEDBB719C8D6EF00579544 /* blueTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker.png; sourceTree = "<group>"; };
 		5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringWheelViewController.h; sourceTree = "<group>"; };
 		5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SteeringWheelViewController.mm; sourceTree = "<group>"; };
 		5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfSteeringWheel.h; sourceTree = "<group>"; };
 		5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfSteeringWheel.m; sourceTree = "<group>"; };
+		5EEFBD2319DF182400E82D87 /* 16-44100-beebuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16-44100-beebuzz.wav"; sourceTree = "<group>"; };
+		5EEFBD2419DF182400E82D87 /* 16-44100-pianoriff.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16-44100-pianoriff.wav"; sourceTree = "<group>"; };
+		5EEFBD2519DF182400E82D87 /* 16-44100-pianosong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16-44100-pianosong.wav"; sourceTree = "<group>"; };
+		5EEFBD2619DF182400E82D87 /* 16-44100-rockjam.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16-44100-rockjam.wav"; sourceTree = "<group>"; };
+		5EEFBD2719DF182400E82D87 /* 8-11025-catmeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "8-11025-catmeow.wav"; sourceTree = "<group>"; };
 		980CD64819A69841008944E2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		980CD64E19A6F644008944E2 /* ChurchBells.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ChurchBells.wav; sourceTree = "<group>"; };
 		98607DE3199EA82100468464 /* AO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AO.png; sourceTree = "<group>"; };
@@ -152,10 +152,10 @@
 		5E27A11B19D46F1D00AA1635 /* Sonic */ = {
 			isa = PBXGroup;
 			children = (
+				5EEFBD2119DF182400E82D87 /* soundFiles */,
 				5E27A11C19D46F1D00AA1635 /* .gitattributes */,
 				5E27A11D19D46F1D00AA1635 /* .gitignore */,
 				5E27A11E19D46F1D00AA1635 /* include */,
-				5E27A12B19D46F1D00AA1635 /* InputData */,
 				5E27A13019D46F1D00AA1635 /* iOS */,
 				5E27A13319D46F1D00AA1635 /* LICENSE */,
 				5E27A13419D46F1D00AA1635 /* MIT_HRTF_Library */,
@@ -184,17 +184,6 @@
 				5E27A12A19D46F1D00AA1635 /* World.h */,
 			);
 			path = include;
-			sourceTree = "<group>";
-		};
-		5E27A12B19D46F1D00AA1635 /* InputData */ = {
-			isa = PBXGroup;
-			children = (
-				5E27A12C19D46F1D00AA1635 /* 1minutetest.wav */,
-				5E27A12D19D46F1D00AA1635 /* 3m40stest.wav */,
-				5E27A12E19D46F1D00AA1635 /* catmeow.wav */,
-				5E27A12F19D46F1D00AA1635 /* input1mono.wav */,
-			);
-			path = InputData;
 			sourceTree = "<group>";
 		};
 		5E27A13019D46F1D00AA1635 /* iOS */ = {
@@ -262,6 +251,26 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		5EEFBD2119DF182400E82D87 /* soundFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5EEFBD2219DF182400E82D87 /* WAV */,
+			);
+			path = soundFiles;
+			sourceTree = "<group>";
+		};
+		5EEFBD2219DF182400E82D87 /* WAV */ = {
+			isa = PBXGroup;
+			children = (
+				5EEFBD2319DF182400E82D87 /* 16-44100-beebuzz.wav */,
+				5EEFBD2419DF182400E82D87 /* 16-44100-pianoriff.wav */,
+				5EEFBD2519DF182400E82D87 /* 16-44100-pianosong.wav */,
+				5EEFBD2619DF182400E82D87 /* 16-44100-rockjam.wav */,
+				5EEFBD2719DF182400E82D87 /* 8-11025-catmeow.wav */,
+			);
+			path = WAV;
+			sourceTree = "<group>";
+		};
 		98CDC57B19899D05006A4911 = {
 			isa = PBXGroup;
 			children = (
@@ -295,7 +304,6 @@
 				98CDC59119899D06006A4911 /* Main.storyboard */,
 				5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */,
 				5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */,
-				5E9CD26119DDB14400758A88 /* beebuzz.wav */,
 				98CDC5AD19899EF0006A4911 /* SteeringWheel.m */,
 				98CDC5AF19899F0A006A4911 /* SteeringWheel.h */,
 				5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */,
@@ -429,20 +437,20 @@
 			files = (
 				980CD64F19A6F644008944E2 /* ChurchBells.wav in Resources */,
 				98CDC5AC19899D59006A4911 /* ring-frame-1.jpg in Resources */,
+				5EEFBD2A19DF182400E82D87 /* 16-44100-pianosong.wav in Resources */,
 				5EBEDBB819C8D6EF00579544 /* blueTracker.png in Resources */,
 				5E27A15019D46F1D00AA1635 /* .gitignore in Resources */,
 				98CDC59319899D06006A4911 /* Main.storyboard in Resources */,
-				5E27A15119D46F1D00AA1635 /* 1minutetest.wav in Resources */,
-				5E27A15219D46F1D00AA1635 /* 3m40stest.wav in Resources */,
-				5E27A15419D46F1D00AA1635 /* input1mono.wav in Resources */,
+				5EEFBD2819DF182400E82D87 /* 16-44100-beebuzz.wav in Resources */,
 				5E27A14F19D46F1D00AA1635 /* .gitattributes in Resources */,
-				5E9CD26219DDB14400758A88 /* beebuzz.wav in Resources */,
 				5E27A15619D46F1D00AA1635 /* LICENSE in Resources */,
 				5E27A15719D46F1D00AA1635 /* README.md in Resources */,
+				5EEFBD2C19DF182400E82D87 /* 8-11025-catmeow.wav in Resources */,
+				5EEFBD2B19DF182400E82D87 /* 16-44100-rockjam.wav in Resources */,
 				98CDC5B11989A3F3006A4911 /* 450px-White_circle_in_blue_background.svg.png in Resources */,
 				98607DE4199EA82100468464 /* AO.png in Resources */,
 				98CDC59519899D06006A4911 /* Images.xcassets in Resources */,
-				5E27A15319D46F1D00AA1635 /* catmeow.wav in Resources */,
+				5EEFBD2919DF182400E82D87 /* 16-44100-pianoriff.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
