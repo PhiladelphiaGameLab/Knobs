@@ -21,11 +21,12 @@
 		5E27A15E19D46F1D00AA1635 /* Mixer3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14919D46F1D00AA1635 /* Mixer3D.cpp */; };
 		5E27A15F19D46F1D00AA1635 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14A19D46F1D00AA1635 /* Player.cpp */; };
 		5E27A16019D46F1D00AA1635 /* velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14B19D46F1D00AA1635 /* velocity.cpp */; };
-		5E27A16119D46F1D00AA1635 /* WavObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14C19D46F1D00AA1635 /* WavObject.mm */; };
+		5E27A16119D46F1D00AA1635 /* WavObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14C19D46F1D00AA1635 /* WavObject.cpp */; };
 		5E27A16219D46F1D00AA1635 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14D19D46F1D00AA1635 /* World.cpp */; };
 		5EBEDBB819C8D6EF00579544 /* blueTracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker.png */; };
 		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */; };
 		5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */; };
+		5EDF759819DF5240006BE24C /* Waterfall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EDF759719DF5240006BE24C /* Waterfall.wav */; };
 		98C6BF3D19DF3F120051B505 /* 16-44100-beebuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98C6BF3819DF3F120051B505 /* 16-44100-beebuzz.wav */; };
 		98C6BF3E19DF3F120051B505 /* 16-44100-pianoriff.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98C6BF3919DF3F120051B505 /* 16-44100-pianoriff.wav */; };
 		98C6BF3F19DF3F120051B505 /* 16-44100-pianosong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98C6BF3A19DF3F120051B505 /* 16-44100-pianosong.wav */; };
@@ -89,13 +90,14 @@
 		5E27A14919D46F1D00AA1635 /* Mixer3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mixer3D.cpp; sourceTree = "<group>"; };
 		5E27A14A19D46F1D00AA1635 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		5E27A14B19D46F1D00AA1635 /* velocity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = velocity.cpp; sourceTree = "<group>"; };
-		5E27A14C19D46F1D00AA1635 /* WavObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WavObject.mm; sourceTree = "<group>"; };
+		5E27A14C19D46F1D00AA1635 /* WavObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WavObject.cpp; sourceTree = "<group>"; };
 		5E27A14D19D46F1D00AA1635 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
 		5EBEDBB719C8D6EF00579544 /* blueTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker.png; sourceTree = "<group>"; };
 		5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringWheelViewController.h; sourceTree = "<group>"; };
 		5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SteeringWheelViewController.mm; sourceTree = "<group>"; };
 		5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfSteeringWheel.h; sourceTree = "<group>"; };
 		5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfSteeringWheel.m; sourceTree = "<group>"; };
+		5EDF759719DF5240006BE24C /* Waterfall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Waterfall.wav; sourceTree = "<group>"; };
 		980CD64819A69841008944E2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		98BE200E19917C11005708AE /* RotaryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotaryProtocol.h; sourceTree = "<group>"; };
 		98C6BF3819DF3F120051B505 /* 16-44100-beebuzz.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16-44100-beebuzz.wav"; sourceTree = "<group>"; };
@@ -236,7 +238,7 @@
 				5E27A14919D46F1D00AA1635 /* Mixer3D.cpp */,
 				5E27A14A19D46F1D00AA1635 /* Player.cpp */,
 				5E27A14B19D46F1D00AA1635 /* velocity.cpp */,
-				5E27A14C19D46F1D00AA1635 /* WavObject.mm */,
+				5E27A14C19D46F1D00AA1635 /* WavObject.cpp */,
 				5E27A14D19D46F1D00AA1635 /* World.cpp */,
 			);
 			path = source;
@@ -258,6 +260,7 @@
 				98C6BF3A19DF3F120051B505 /* 16-44100-pianosong.wav */,
 				98C6BF3B19DF3F120051B505 /* 16-44100-rockjam.wav */,
 				98C6BF3C19DF3F120051B505 /* 8-11025-catmeow.wav */,
+				5EDF759719DF5240006BE24C /* Waterfall.wav */,
 			);
 			path = WAV;
 			sourceTree = "<group>";
@@ -268,7 +271,6 @@
 				980CD64819A69841008944E2 /* CoreMotion.framework */,
 				98F4FDB119930D43001BB9B6 /* Foundation.framework */,
 				98F4FDAF19930D38001BB9B6 /* AudioToolbox.framework */,
-				5E27A11B19D46F1D00AA1635 /* Sonic */,
 				98CDC58619899D06006A4911 /* Knobs */,
 				98CDC59D19899D06006A4911 /* KnobTests */,
 				98CDC58519899D06006A4911 /* Products */,
@@ -287,6 +289,7 @@
 		98CDC58619899D06006A4911 /* Knobs */ = {
 			isa = PBXGroup;
 			children = (
+				5E27A11B19D46F1D00AA1635 /* Sonic */,
 				98CDC5AA19899D3A006A4911 /* Assets */,
 				98CDC58B19899D06006A4911 /* AppDelegate.h */,
 				98CDC58C19899D06006A4911 /* AppDelegate.m */,
@@ -429,6 +432,7 @@
 				5EBEDBB819C8D6EF00579544 /* blueTracker.png in Resources */,
 				5E27A15019D46F1D00AA1635 /* .gitignore in Resources */,
 				98CDC59319899D06006A4911 /* Main.storyboard in Resources */,
+				5EDF759819DF5240006BE24C /* Waterfall.wav in Resources */,
 				5E27A14F19D46F1D00AA1635 /* .gitattributes in Resources */,
 				5E27A15619D46F1D00AA1635 /* LICENSE in Resources */,
 				5E27A15719D46F1D00AA1635 /* README.md in Resources */,
@@ -464,7 +468,7 @@
 				5E27A15B19D46F1D00AA1635 /* fft.cpp in Sources */,
 				5E27A15A19D46F1D00AA1635 /* complex.cpp in Sources */,
 				98CDC58D19899D06006A4911 /* AppDelegate.m in Sources */,
-				5E27A16119D46F1D00AA1635 /* WavObject.mm in Sources */,
+				5E27A16119D46F1D00AA1635 /* WavObject.cpp in Sources */,
 				5E27A15819D46F1D00AA1635 /* Sonic.cpp in Sources */,
 				5E27A16019D46F1D00AA1635 /* velocity.cpp in Sources */,
 				5E27A15C19D46F1D00AA1635 /* location.cpp in Sources */,
@@ -588,9 +592,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Cannon (9U9PN263NW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Knobs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
@@ -604,9 +609,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Cannon (9U9PN263NW)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Knobs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
