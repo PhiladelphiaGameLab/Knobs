@@ -70,9 +70,9 @@
     if (currentAngle > 90) {
         angleDifference = 90 - previousAngle; // amount needed to rotate to 90 degrees
         currentAngle = 90.00;
-    } else if (currentAngle < -90) {
-        angleDifference = -90 - previousAngle; // amount needed to rotate to -90 degrees
-        currentAngle = -90.00;
+    } else if (currentAngle < -40) {
+        angleDifference = -40 - previousAngle; // amount needed to rotate to -90 degrees
+        currentAngle = -40.00;
     }
     
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
@@ -116,9 +116,9 @@
     if (currentAngle > 90) {
         angleDifference = 90 - previousAngle; // amount needed to rotate to 90 degrees
         currentAngle = 90.00;
-    } else if (currentAngle < -90) {
-        angleDifference = -90 - previousAngle; // amount needed to rotate to -90 degrees
-        currentAngle = -90.00;
+    } else if (currentAngle < -40) {
+        angleDifference = -40 - previousAngle; // amount needed to rotate to -90 degrees
+        currentAngle = -40.00;
     }
     
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));

@@ -592,7 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Cannon (9U9PN263NW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Knobs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -600,7 +600,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = Knobs;
-				PROVISIONING_PROFILE = "64b635ce-4ce9-4086-aeba-1dc03f69e4de";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -609,7 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Cannon (9U9PN263NW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Knobs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -617,7 +617,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = Knobs;
-				PROVISIONING_PROFILE = "64b635ce-4ce9-4086-aeba-1dc03f69e4de";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
