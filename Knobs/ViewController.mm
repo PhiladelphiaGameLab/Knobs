@@ -35,16 +35,31 @@
     Sonic::createWorld();
     Sonic::setPlayerBearing(0.0);
     
+    CGSize mySize = self.view.frame.size;
+    CGFloat myWidth = mySize.width;
+    CGFloat myHeight = mySize.height;
+    
+    CGFloat wheelSize = myWidth/2.0; // diameter of the wheels
+    CGFloat wheelVerticalMargin = .1*myHeight;
+                                                                    
+    CGFloat sonicLabelHeight = .05*myHeight;
+    CGFloat sonicLabelWidth = .5*myWidth;
+    
+    UILabel *sonicLabel = [[UILabel alloc] initWithFrame:CGRectMake((myWidth - sonicLabelWidth)/2.0, (myHeight - sonicLabelHeight)/2.0, sonicLabelWidth, sonicLabelHeight)];
+    sonicLabel.text = @"BUILT WITH SONIC";
+    
+    [self.view addSubView:sonicLabel];
+    
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"16-44100-beebuzz" ofType:@"wav"];
     std::string soundPathUTF = std::string([soundPath UTF8String]);
     audioObj1 = Sonic::addAudioObject(soundPathUTF, 0, 1, 0);
     
-    azimuthWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"YAW" ZeroPosition:90 Delegate:self];
-    azimuthWheel.center = CGPointMake(160, 130);
+    azimuthWheel = [[SteeringWheel alloc] initWithFrame:CGRectMake(0, 0, wheelSize, wheelSize) Label:@"YAW" ZeroPosition:90 Delegate:self];
+    azimuthWheel.center = CGPointMake(.5*myWidth, wheelSize/2.0 + wheelVerticalMargin);
     [self.view addSubview:azimuthWheel];
     
-    elevationWheel = [[HalfSteeringWheel alloc] initWithFrame:CGRectMake(0, 0, 150, 150) Label:@"PITCH" ZeroPosition:0 Delegate:self];
-    elevationWheel.center = CGPointMake(160, 350);
+    elevationWheel = [[HalfSteeringWheel alloc] initWithFrame:CGRectMake(0, 0, .5*myWidth, .5*myWidth) Label:@"PITCH" ZeroPosition:0 Delegate:self];
+    elevationWheel.center = CGPointMake(.5*myWidth, myHeight - wheelSize/2.0 - wheelVerticalMargin);
     [self.view addSubview:elevationWheel];
 
     Sonic::startPlaying();
