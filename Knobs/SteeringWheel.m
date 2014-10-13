@@ -9,10 +9,6 @@
 #import "SteeringWheel.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface SteeringWheel()
-- (void)drawWheel;
-@end
-
 @implementation SteeringWheel
 
 @synthesize delegate, /* container,*/ startTransform, currentAngle, previousTouchAngle;

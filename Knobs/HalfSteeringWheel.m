@@ -9,13 +9,6 @@
 #import "HalfSteeringWheel.h"
 
 // TODO: Can we avoid redefining PI and DEGREES_TO_RADIANS here?
-#ifndef PI
-#define PI 3.14159
-#endif
-
-#ifndef DEGREES_TO_RADIANS
-#define DEGREES_TO_RADIANS(degrees) ((degrees) * (PI / 180.0))
-#endif
 
 @implementation HalfSteeringWheel
 
