@@ -60,6 +60,7 @@
     [self addSubview:self.valueLabel];
     
     // rotate wheel to starting position
+    // in iOS negative degrees indicates counterclockwise rotation, not clockwise
     self.bg.transform = CGAffineTransformRotate(self.bg.transform, -DEGREES_TO_RADIANS(self.zeroPosition));
     
     //container.userInteractionEnabled = NO;
@@ -108,6 +109,8 @@
     NSLog(@"currentTouchAngle: %.2f", currentTouchAngle);
     NSLog(@"previousTouchAngle: %.2f", previousTouchAngle);
     NSLog(@"angleDifference: %.2f", angleDifference);
+    
+    // in iOS negative degrees indicates counterclockwise rotation, not clockwise
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
     
     // convert angle to degrees and scale to range needed by the MIT HRTF library
@@ -123,14 +126,12 @@
         }
     }
     
-    //currentAngle = -currentAngle; // counterclockwise yaw is negative for MIT lib
-    
-    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", -currentAngle];
+    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
 
     previousTouchAngle = currentTouchAngle;
     startTransform = self.bg.transform;
     
-    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:-currentAngle];
+    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:currentAngle];
     
     return YES;
 }
@@ -149,6 +150,8 @@
     // rotate wheel by the difference between the current and previous angles
     float angleDifference = previousTouchAngle - currentTouchAngle;
     NSLog(@"currentTouchAngle: %.2f", currentTouchAngle);
+    
+    // in iOS negative degrees indicates counterclockwise rotation, not clockwise
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
    
     // convert angle to degrees and scale to range needed by the MIT HRTF library,
@@ -166,9 +169,9 @@
     
     //currentAngle = -currentAngle;
     
-    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", -currentAngle];
+    self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
     previousTouchAngle = currentAngle;
-    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:-currentAngle];
+    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:currentAngle];
 }
 
 

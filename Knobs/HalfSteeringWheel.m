@@ -8,8 +8,6 @@
 
 #import "HalfSteeringWheel.h"
 
-// TODO: Can we avoid redefining PI and DEGREES_TO_RADIANS here?
-
 @implementation HalfSteeringWheel
 
 @synthesize delegate, /* container,*/ startTransform, currentAngle, previousAngle, previousTouchAngle;
@@ -68,6 +66,7 @@
         currentAngle = -40.00;
     }
     
+    // in iOS negative degrees indicates counterclockwise rotation, not clockwise
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
 
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
@@ -114,6 +113,7 @@
         currentAngle = -40.00;
     }
     
+    // in iOS negative degrees indicates counterclockwise rotation, not clockwise
     self.bg.transform = CGAffineTransformRotate(startTransform, -DEGREES_TO_RADIANS(angleDifference));
     
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
