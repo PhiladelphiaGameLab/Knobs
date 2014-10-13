@@ -18,6 +18,11 @@
 
 @synthesize valueLabel, azimuth, elevation, audioObj1;
 
+#define WHEEL_MARGIN_RATIO .1 // ratio of the vertical wheel margin to the height of the view
+#define WHEEL_SIZE_RATIO 0.5 // ratio of the wheel diameter to the width of the view
+#define SONIC_LABEL_HEIGHT_RATIO 0.05 // ratio of the height of the "sonic" label to the height of the view
+#define SONIC_LABEL_WIDTH_RATIO 0.5 // ratio of the width of the "sonic" label to the width of the view
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -39,16 +44,18 @@
     CGFloat myWidth = mySize.width;
     CGFloat myHeight = mySize.height;
     
-    CGFloat wheelSize = myWidth/2.0; // diameter of the wheels
-    CGFloat wheelVerticalMargin = .1*myHeight;
+    CGFloat wheelSize = WHEEL_SIZE_RATIO*myWidth; // diameter of the wheels
+    CGFloat wheelVerticalMargin = WHEEL_MARGIN_RATIO*myHeight;
                                                                     
-    CGFloat sonicLabelHeight = .05*myHeight;
-    CGFloat sonicLabelWidth = .5*myWidth;
+    CGFloat sonicLabelHeight = LABEL_HEIGHT_RATIO*myHeight;
+    CGFloat sonicLabelWidth = LABEL_WIDTH_RATIO*myWidth;
     
     UILabel *sonicLabel = [[UILabel alloc] initWithFrame:CGRectMake((myWidth - sonicLabelWidth)/2.0, (myHeight - sonicLabelHeight)/2.0, sonicLabelWidth, sonicLabelHeight)];
     sonicLabel.text = @"BUILT WITH SONIC";
+    sonicLabel.textAlignment = NSTextAlignmentCenter;
+    sonicLabel.textColor = [UIColor lightGrayColor];
     
-    [self.view addSubView:sonicLabel];
+    [self.view addSubview:sonicLabel];
     
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"16-44100-beebuzz" ofType:@"wav"];
     std::string soundPathUTF = std::string([soundPath UTF8String]);
