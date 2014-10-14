@@ -130,8 +130,8 @@
 
     previousTouchAngle = currentTouchAngle;
     startTransform = self.bg.transform;
-    
-    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:currentAngle];
+    // right of center is positive, left is negative for MIT lib
+    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:-currentAngle];
     
     return YES;
 }
@@ -171,7 +171,8 @@
     
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
     previousTouchAngle = currentAngle;
-    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:currentAngle];
+    // right of center is positive, left is negative for MIT lib
+    [self.delegate wheelWithName:@"azimuth" didChangeAngleTo:-currentAngle];
 }
 
 

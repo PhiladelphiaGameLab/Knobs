@@ -74,7 +74,7 @@
     previousTouchAngle = currentTouchAngle; // why does this break things?
     startTransform = self.bg.transform;
     
-    [self.delegate wheelWithName:@"elevation" didChangeAngleTo:currentAngle];
+    [self.delegate wheelWithName:@"elevation" didChangeAngleTo:-currentAngle];
     
     return YES;
 }
@@ -118,7 +118,9 @@
     
     self.valueLabel.text = [NSString stringWithFormat:@"%.2f", currentAngle];
     previousTouchAngle = currentAngle;
-    [self.delegate wheelWithName:@"elevation" didChangeAngleTo:currentAngle];
+    // right of center is positive, left is negative for MIT lib
+    // TODO: change everything to be consistent with MIT lib coord system?
+    [self.delegate wheelWithName:@"elevation" didChangeAngleTo:-currentAngle];
 }
 
 @end
