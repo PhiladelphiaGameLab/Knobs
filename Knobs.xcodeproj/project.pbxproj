@@ -24,7 +24,6 @@
 		5E27A16119D46F1D00AA1635 /* WavObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14C19D46F1D00AA1635 /* WavObject.cpp */; };
 		5E27A16219D46F1D00AA1635 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E27A14D19D46F1D00AA1635 /* World.cpp */; };
 		5EBEDBB819C8D6EF00579544 /* blueTracker.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EBEDBB719C8D6EF00579544 /* blueTracker.png */; };
-		5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */; };
 		5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */; };
 		5EDF759819DF5240006BE24C /* Waterfall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5EDF759719DF5240006BE24C /* Waterfall.wav */; };
 		98C6BF3D19DF3F120051B505 /* 16-44100-beebuzz.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98C6BF3819DF3F120051B505 /* 16-44100-beebuzz.wav */; };
@@ -93,8 +92,6 @@
 		5E27A14C19D46F1D00AA1635 /* WavObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WavObject.cpp; sourceTree = "<group>"; };
 		5E27A14D19D46F1D00AA1635 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
 		5EBEDBB719C8D6EF00579544 /* blueTracker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueTracker.png; sourceTree = "<group>"; };
-		5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringWheelViewController.h; sourceTree = "<group>"; };
-		5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SteeringWheelViewController.mm; sourceTree = "<group>"; };
 		5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfSteeringWheel.h; sourceTree = "<group>"; };
 		5EDF4C3219C780CD0083957F /* HalfSteeringWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfSteeringWheel.m; sourceTree = "<group>"; };
 		5EDF759719DF5240006BE24C /* Waterfall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Waterfall.wav; sourceTree = "<group>"; };
@@ -296,8 +293,6 @@
 				98CDC58E19899D06006A4911 /* ViewController.h */,
 				98CDC58F19899D06006A4911 /* ViewController.mm */,
 				98CDC59119899D06006A4911 /* Main.storyboard */,
-				5EBEDBB919C8E7B200579544 /* SteeringWheelViewController.h */,
-				5EBEDBBA19C8E7B200579544 /* SteeringWheelViewController.mm */,
 				98CDC5AD19899EF0006A4911 /* SteeringWheel.m */,
 				98CDC5AF19899F0A006A4911 /* SteeringWheel.h */,
 				5EDF4C3119C780CD0083957F /* HalfSteeringWheel.h */,
@@ -463,7 +458,6 @@
 				98CDC59019899D06006A4911 /* ViewController.mm in Sources */,
 				5E27A15E19D46F1D00AA1635 /* Mixer3D.cpp in Sources */,
 				5E27A15519D46F1D00AA1635 /* CustomAudioUnit.cpp in Sources */,
-				5EBEDBBB19C8E7B200579544 /* SteeringWheelViewController.mm in Sources */,
 				5EDF4C3319C780CD0083957F /* HalfSteeringWheel.m in Sources */,
 				5E27A15B19D46F1D00AA1635 /* fft.cpp in Sources */,
 				5E27A15A19D46F1D00AA1635 /* complex.cpp in Sources */,
@@ -592,7 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Cannon (9U9PN263NW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Knobs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -600,7 +594,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = Knobs;
-				PROVISIONING_PROFILE = "64b635ce-4ce9-4086-aeba-1dc03f69e4de";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -609,7 +603,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Cannon (9U9PN263NW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Knobs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -617,7 +611,7 @@
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = Knobs;
-				PROVISIONING_PROFILE = "64b635ce-4ce9-4086-aeba-1dc03f69e4de";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

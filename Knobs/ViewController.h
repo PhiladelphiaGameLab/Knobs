@@ -13,9 +13,9 @@
 #import "SteeringWheel.h"
 #import "HalfSteeringWheel.h"
 
-// TODO: replace with M_PI
-#define PI 3.14159
-#define DEGREES_TO_RADIANS(degrees) ((degrees) * (PI / 180.0))
+#ifndef DEGREES_TO_RADIANS
+#define DEGREES_TO_RADIANS(degrees) ((degrees) * (M_PI / 180.0))
+#endif
 
 @interface ViewController : UIViewController<RotaryProtocol>{
     
